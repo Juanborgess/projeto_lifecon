@@ -1,6 +1,5 @@
 ---
 // Header.astro - Cabeçalho / Navbar Superior Lifecon
-import Button from './Button.astro';
 import { Image } from 'astro:assets';
 import logoLifecon from '../assets/logo-lifecon.jpeg';
 ---
@@ -30,6 +29,9 @@ import logoLifecon from '../assets/logo-lifecon.jpeg';
   </nav>
 
   <div class="hd-actions">
-    <Button href="#diagnostico" size="sm" id="nav-cta-btn" text="Simule seu Plano" />
+    <a href="#diagnostico" class="btn btn-sm" id="nav-cta-btn">
+      <span class="btn-label"><span>Simule seu Plano</span><span>Simule seu Plano</span></span>
+      <span class="btn-icon"><span>→</span><span>→</span></span>
+    </a>
   </div>
 </header>

@@ -741,19 +741,15 @@ import fotoRafael from '../assets/foto-rafael-borges.png';
         ctx.drawImage(targetImg, nx, ny, nw, nh);
       }
 
-      // Pré-carregamento Inteligente e Prioritário (Zero Bloqueio no Mobile)
-      var batchesStarted = false;
+      // Pré-carregamento Inteligente e Prioritário (Zero Race Conditions)
       function preloadFrames() {
+        // Inicializa o array de instâncias Image
         for (var i = 0; i < TOTAL_FRAMES; i++) {
           images[i] = new Image();
         }
 
-        // PRIORIDADE 1: Quadro 0 (imediato e com prioridade máxima)
+        // PRIORIDADE 1: Quadro 0 (garante renderização imediata, mesmo se em cache)
         var img0 = images[0];
-        img0.loading = 'eager';
-        if ('fetchPriority' in img0) {
-          img0.fetchPriority = 'high';
-        }
         img0.onload = function () {
           isFirstFrameRendered = true;
           resizeCanvas();
@@ -764,9 +760,8 @@ import fotoRafael from '../assets/foto-rafael-borges.png';
           img0.onload();
         }
 
-        // PRIORIDADE 2: No mobile carrega apenas 5 quadros iniciais para economizar payload de rede (LCP rápido); no desktop carrega 20.
-        var initialCount = isMobile ? 6 : 20;
-        for (var k = 1; k < initialCount && k < TOTAL_FRAMES; k++) {
+        // PRIORIDADE 2: Quadros 1 a 20 (área inicial de scroll)
+        for (var k = 1; k <= 20 && k < TOTAL_FRAMES; k++) {
           (function (idx) {
             var img = images[idx];
             img.onload = function () {
@@ -779,9 +774,9 @@ import fotoRafael from '../assets/foto-rafael-borges.png';
         }
 
         // PRIORIDADE 3: Restante dos quadros em lotes não-bloqueantes
-        var nextBatchStart = initialCount;
+        var nextBatchStart = 21;
         function loadBatch() {
-          var batchSize = isMobile ? 8 : 24;
+          var batchSize = isMobile ? 12 : 24;
           var end = Math.min(nextBatchStart + batchSize, TOTAL_FRAMES);
           for (var idx = nextBatchStart; idx < end; idx++) {
             (function (index) {
@@ -797,32 +792,14 @@ import fotoRafael from '../assets/foto-rafael-borges.png';
           nextBatchStart = end;
           if (nextBatchStart < TOTAL_FRAMES) {
             if (window.requestIdleCallback) {
-              window.requestIdleCallback(loadBatch, { timeout: isMobile ? 600 : 200 });
+              window.requestIdleCallback(loadBatch, { timeout: 150 });
             } else {
-              setTimeout(loadBatch, isMobile ? 120 : 40);
+              setTimeout(loadBatch, 30);
             }
           }
         }
 
-        function triggerRemainingBatches() {
-          if (batchesStarted) return;
-          batchesStarted = true;
-          if (window.requestIdleCallback) {
-            window.requestIdleCallback(loadBatch, { timeout: isMobile ? 1000 : 300 });
-          } else {
-            setTimeout(loadBatch, isMobile ? 250 : 80);
-          }
-        }
-
-        // No mobile: dispara restante se houver interação de scroll ou quando idle
-        if (isMobile) {
-          window.addEventListener('scroll', triggerRemainingBatches, { passive: true, once: true });
-          window.addEventListener('touchstart', triggerRemainingBatches, { passive: true, once: true });
-          // Fallback caso usuário fique parado no hero apreciando
-          setTimeout(triggerRemainingBatches, 2200);
-        } else {
-          setTimeout(triggerRemainingBatches, 80);
-        }
+        setTimeout(loadBatch, 60);
       }
 
       // Animação de Entrada
