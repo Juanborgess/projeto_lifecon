@@ -631,7 +631,9 @@ import fotoRafael from '../assets/foto-rafael-borges.png';
       'use strict';
 
       // 1. Registro dos Plugins GSAP
-      gsap.registerPlugin(ScrollTrigger);
+      if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+        gsap.registerPlugin(ScrollTrigger);
+      }
 
       // 2. Elementos DOM
       var canvas = document.getElementById('hero-canvas');
@@ -1467,8 +1469,14 @@ import fotoRafael from '../assets/foto-rafael-borges.png';
         });
       }
 
-      // Inicialização Robusta
-      window.addEventListener('DOMContentLoaded', function () {
+      function initApp() {
+        if (!canvas) {
+          canvas = document.getElementById('hero-canvas');
+          if (canvas) ctx = canvas.getContext('2d', { alpha: false });
+        }
+        if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+          gsap.registerPlugin(ScrollTrigger);
+        }
         preloadFrames();
         resizeCanvas();
         playEntranceAnimation();
@@ -1477,22 +1485,31 @@ import fotoRafael from '../assets/foto-rafael-borges.png';
         setupSpotlightTracking();
         setupDiagnosticConsole();
         setupFaqAccordion();
+      }
 
-        // Redimensionamento Inteligente (ignora retração/expansão da barra de navegação no mobile)
-        var lastWidth = window.innerWidth;
-        window.addEventListener('resize', function () {
-          if (Math.abs(window.innerWidth - lastWidth) > 60) {
-            var newIsMobile = window.innerWidth < 992;
-            if (newIsMobile !== isMobile) {
-              isMobile = newIsMobile;
-              framesPath = isMobile ? '/assets/frames-mobile/' : '/assets/frames-desktop/';
-              preloadFrames();
-            }
-            lastWidth = window.innerWidth;
-            resizeCanvas();
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initApp);
+      } else {
+        initApp();
+      }
+      document.addEventListener('astro:page-load', initApp);
+
+      // Redimensionamento Inteligente (ignora retração/expansão da barra de navegação no mobile)
+      var lastWidth = window.innerWidth;
+      window.addEventListener('resize', function () {
+        if (Math.abs(window.innerWidth - lastWidth) > 60) {
+          var newIsMobile = window.innerWidth < 992;
+          if (newIsMobile !== isMobile) {
+            isMobile = newIsMobile;
+            framesPath = isMobile ? '/assets/frames-mobile/' : '/assets/frames-desktop/';
+            preloadFrames();
+          }
+          lastWidth = window.innerWidth;
+          resizeCanvas();
+          if (typeof ScrollTrigger !== 'undefined') {
             ScrollTrigger.refresh();
           }
-        });
+        }
       });
 
     })();
