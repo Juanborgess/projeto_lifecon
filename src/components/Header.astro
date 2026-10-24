@@ -1,11 +1,19 @@
 ---
 // Header.astro - Cabeçalho / Navbar Superior Lifecon
 import Button from './Button.astro';
+import { Image } from 'astro:assets';
+import logoLifecon from '../assets/logo-lifecon.jpeg';
 ---
 
-<header id="hd">
+<header id="hd" transition:persist>
   <a href="#hero-scroll-wrapper" class="hd-brand" aria-label="Lifecon - Início">
-    <img src="/assets/logo-lifecon.jpeg" alt="Símbolo Lifecon" class="hd-brand-icon">
+    <Image
+      src={logoLifecon}
+      alt="Símbolo Lifecon"
+      class="hd-brand-icon"
+      loading="eager"
+      fetchpriority="high"
+    />
     <span class="hd-brand-text">
       <span class="brand-life">Life</span><span class="brand-con">con</span>
     </span>

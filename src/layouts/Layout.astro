@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { ClientRouter } from 'astro:transitions';
 
 interface Props {
   title?: string;
@@ -21,18 +22,28 @@ const {
   <title>{title}</title>
   <meta name="description" content={description}>
 
+  <ClientRouter />
+
   <!-- ================= FAVICON & THEME ================= -->
   <meta name="theme-color" content="#001536">
   <link rel="icon" type="image/jpeg" href="/assets/logo-lifecon.jpeg">
 
-  <!-- ================= GOOGLE FONTS (Geist & Instrument Serif) ================= -->
+  <!-- ================= LCP PRELOAD (PRIMEIRO FRAME DO HERO COM MÁXIMA PRIORIDADE) ================= -->
+  <link rel="preload" as="image" type="image/webp" href="/assets/frames-desktop/frame_0000.webp" media="(min-width: 992px)" fetchpriority="high" />
+  <link rel="preload" as="image" type="image/webp" href="/assets/frames-mobile/frame_0000.webp" media="(max-width: 991px)" fetchpriority="high" />
+
+  <!-- ================= GOOGLE FONTS (Geist & Instrument Serif) NÃO-BLOQUEANTE ================= -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
+  </noscript>
 
-  <!-- ================= GSAP & SCROLLTRIGGER (CDN) ================= -->
-  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- ================= GSAP & SCROLLTRIGGER (CDN COM DEFER) ================= -->
+  <script is:inline defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script is:inline defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
   <style is:global>
     /* -------------------------------------------------------------

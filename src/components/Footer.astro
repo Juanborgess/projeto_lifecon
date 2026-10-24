@@ -1,8 +1,10 @@
 ---
 // Footer.astro - Rodapé Institucional Lifecon
+import { Image } from 'astro:assets';
+import logoLifecon from '../assets/logo-lifecon.jpeg';
 ---
 
-<footer class="site-footer">
+<footer class="site-footer" transition:persist>
   <div class="footer-container">
     
     <div class="footer-main-grid" data-blur-scroll>
@@ -10,7 +12,7 @@
       <!-- Coluna 1: Marca & Propósito -->
       <div class="footer-brand-side">
         <a href="#hero-scroll-wrapper" class="footer-logo" aria-label="Lifecon - Início">
-          <img src="/assets/logo-lifecon.jpeg" alt="Símbolo Lifecon">
+          <Image src={logoLifecon} alt="Símbolo Lifecon" />
           <span class="footer-logo-text">
             <span class="brand-life">Life</span><span class="brand-con">con</span>
           </span>
