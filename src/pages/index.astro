@@ -1,11 +1,2154 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Button from '../components/Button.astro';
+import FloatingWhatsApp from '../components/FloatingWhatsApp.astro';
+import SolutionCard from '../components/SolutionCard.astro';
+import ContrastCard from '../components/ContrastCard.astro';
 ---
 
 <Layout>
-	<Welcome />
+<!-- ================= HERO SECTION FULL-SCREEN COM APPLE-GRADE SCROLLYTELLING ================= -->
+  <section id="hero-scroll-wrapper">
+    <div class="hero-pinned-stage" id="hero-pin-target">
+      
+      <!-- Canvas de Alta Performance Apple-Grade (120 WebP Frames GPU Accelerated) -->
+      <div class="hero-video-fullscreen">
+        <canvas id="hero-canvas"></canvas>
+      </div>
+
+      <!-- Orbit Background Geometry (Padrão DRIFT & OTTO) -->
+      <div class="hero-orbit-stage" aria-hidden="true">
+        <svg class="hero-orbit-svg" viewBox="0 0 500 500" fill="none">
+          <circle cx="250" cy="250" r="230" stroke="rgba(9, 175, 198, 0.12)" stroke-width="1" stroke-dasharray="4 6" />
+          <circle cx="250" cy="250" r="170" stroke="rgba(202, 157, 99, 0.15)" stroke-width="1" />
+          <circle cx="250" cy="250" r="110" stroke="rgba(9, 175, 198, 0.20)" stroke-width="1" stroke-dasharray="2 4" />
+          <line x1="250" y1="10" x2="250" y2="490" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" stroke-dasharray="2 8" />
+          <line x1="10" y1="250" x2="490" y2="250" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" stroke-dasharray="2 8" />
+          <circle cx="250" cy="20" r="3" fill="#09AFC6" />
+          <circle cx="420" cy="250" r="3" fill="#CA9D63" />
+        </svg>
+      </div>
+
+      <!-- Scrim Gradiente Dinâmico (Fade out no scroll junto com o texto) -->
+      <div class="hero-scrim-overlay" id="hero-scrim"></div>
+
+      <!-- Floating Contextual Cards (Padrão OTTO - preenche o espaço com prova de alto valor) -->
+      <div class="hero-float-badges" id="hero-float-badges">
+        <div class="hero-float-card float-card-left">
+          <span class="float-card-dot"></span>
+          <div class="float-card-body">
+            <span class="float-card-label">Administradoras Oficiais</span>
+            <span class="float-card-val">Embracon · CNVW</span>
+          </div>
+        </div>
+        <div class="hero-float-card float-card-right">
+          <span class="float-card-dot gold-dot"></span>
+          <div class="float-card-body">
+            <span class="float-card-label">Alavancagem Inteligente</span>
+            <span class="float-card-val">Lance Embutido até 30%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Camada de Texto & Copywriting (Some suavemente nos primeiros 20% do scroll) -->
+      <div class="hero-text-layer" id="hero-text-layer">
+        <div class="hero-content">
+          
+          <!-- Eyebrow Badge -->
+          <div class="hero-badge hero-anim-elem">
+            <span class="hero-badge-dot"></span>
+            <span>Assessoria Patrimonial & Consórcios</span>
+          </div>
+
+          <!-- Headline H1 com Destaque Dourado -->
+          <h1 class="hero-title hero-anim-elem">
+            <span class="hero-title-main">Antes de vender um plano,</span>
+            <span class="hero-title-accent"><em>queremos entender o seu.</em></span>
+          </h1>
+
+          <!-- Subtítulo de Autoridade -->
+          <p class="hero-subtitle hero-anim-elem">
+            A estratégia inteligente para conquistar imóveis, veículos e patrimônio sólido com transparência absoluta e assessoria do início ao fim.
+          </p>
+
+          <!-- Ação Primária & Secundária (Desktop side-by-side / Mobile focado) -->
+          <div class="hero-actions hero-anim-elem">
+            <Button
+              href="#diagnostico"
+              class="hero-btn-primary"
+              id="hero-primary-cta"
+              text="Traçar Meu Planejamento"
+            />
+            
+            <Button
+              href="#como-funciona"
+              variant="ghost"
+              class="hero-btn-secondary"
+              id="hero-secondary-cta"
+              text="Como Funciona"
+              icon="↓"
+            />
+          </div>
+
+          <!-- Faixa de Confiança & Transparência Ética (100% Genuíno e Sem Mentiras) -->
+          <div class="hero-trust-strip hero-anim-elem">
+            <span class="trust-shield-icon">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#CA9D63" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </span>
+            <span class="trust-primary">Transparência Absoluta</span>
+            <span class="trust-sep">·</span>
+            <span class="trust-secondary">Taxas a partir de 12% total · 0% juros bancários</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Floating Pill de Scroll Desktop -->
+      <a href="#como-funciona" class="hero-scroll-pill" id="hero-scroll-cue">
+        <span class="scroll-pill-dot"></span>
+        <span class="scroll-pill-text">Role para Explorar</span>
+        <span class="scroll-pill-arrow">↓</span>
+      </a>
+
+      <!-- Bottom Horizon Dock Mobile (Padrão DRIFT & OTTO) -->
+      <div class="hero-bottom-dock" id="hero-bottom-dock">
+        <div class="dock-meta-left">
+          <span class="dock-tag">LIFECON</span>
+          <span class="dock-sep">/</span>
+          <span class="dock-step-active">01 DIAGNÓSTICO</span>
+        </div>
+        <a href="#como-funciona" class="dock-scroll-cue">
+          <span class="dock-cue-text">Role para Explorar</span>
+          <span class="dock-cue-arrow">↓</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SEÇÃO 02: AS SOLUÇÕES LIFECON & O CONTRASTE FINANCEIRO ================= -->
+  <section class="sec-solutions" id="como-funciona">
+    <div class="sec-container">
+      
+      <!-- Header Editorial da Seção -->
+      <header class="sec-header" data-blur-scroll>
+        <div class="sec-kicker">
+          <span class="sec-kicker-dot"></span>
+          <span>02 · ESTRUTURAÇÃO PATRIMONIAL</span>
+        </div>
+        <h2 class="sec-title">
+          Não entregamos apenas cartas de crédito.<br>
+          Estruturamos <em>caminhos viáveis</em> para o que você quer realizar.
+        </h2>
+        <p class="sec-subtitle">
+          Conheça as três principais frentes de planejamento da Lifecon. Uma abordagem estratégica para quem busca solidez, poder de compra à vista e custo financeiro infinitamente menor.
+        </p>
+      </header>
+
+      <!-- As Três Frentes Estratégicas (Grid Bento com Vidro .gb e Spotlight [data-spot]) -->
+      <div class="solution-grid">
+        
+        <!-- Solução 1: Imóveis & Construção -->
+        <SolutionCard
+          id="imoveis"
+          badgeNum="01 / 03"
+          badgeTag="SFH & Imobiliário"
+          title="Imóveis, Terrenos, Construção ou Reforma"
+          description="Para quem quer sair do aluguel, adquirir um imóvel de maior padrão, construir do zero ou reformar sem comprometer o fluxo de caixa com juros bancários compostos."
+          calloutLabel="Lance Embutido de até 30% + FGTS"
+          calloutText="Utilize de 25% a até 30% da própria carta como oferta de lance sem desembolsar recursos próprios, além da possibilidade de uso integral do seu FGTS pelo SFH."
+          specs={[
+            "R$ 100k a R$ 1.2M+",
+            "50 a 240 meses (até 20 anos)",
+            "Taxa Adm a partir de 12% Total",
+            "Opções com 0% Entrada",
+            "Reajuste Oficial INCC"
+          ]}
+          actionText="Simular Plano Imobiliário"
+          actionHref="#diagnostico"
+        >
+          <svg slot="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#09AFC6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </SolutionCard>
+
+        <!-- Solução 2: Veículos & Frotas -->
+        <SolutionCard
+          id="veiculos"
+          badgeNum="02 / 03"
+          badgeTag="Automotivo & Frotas"
+          title="Automóveis, Motos e Renovação de Frotas"
+          description="Troque de veículo no momento certo com poder de compra à vista para negociar até 15% de desconto, sem desvalorização acelerada por juros de financiamento."
+          calloutLabel="0% Entrada ou Antecipada em 12x"
+          calloutText="Tabelas com 0% de taxa antecipada ou entrada fracionada em até 12x (1,2%). Concorra por Lance Fixo (25% ou 50%) e Lance Embutido de 25%."
+          specs={[
+            "Autos: R$ 45k a R$ 180k",
+            "Motos: R$ 15k a R$ 30k",
+            "40 a 100 meses",
+            "Taxa a partir de 13% Total",
+            "Reajuste Oficial IPCA"
+          ]}
+          actionText="Simular Plano Veicular"
+          actionHref="#diagnostico"
+        >
+          <svg slot="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#CA9D63" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C2.1 10.9 2 11.2 2 11.5V16c0 .6.4 1 1 1h2"/>
+            <circle cx="7" cy="17" r="2"/>
+            <path d="M9 17h6"/>
+            <circle cx="17" cy="17" r="2"/>
+          </svg>
+        </SolutionCard>
+
+        <!-- Solução 3: Alavancagem Patrimonial & Pesados -->
+        <SolutionCard
+          id="patrimonio"
+          badgeNum="03 / 03"
+          badgeTag="Pesados & Alavancagem"
+          title="Caminhões, Pesados & Alavancagem"
+          description="Para empresários, frotistas e investidores que utilizam o consórcio para multiplicar ativos, adquirir máquinas e caminhões com o menor custo do mercado."
+          calloutLabel="Plano 50%: Pague Meia Parcela"
+          calloutText="Exclusividade para pesados: pague apenas 50% da parcela até a contemplação, preservando o capital de giro da sua empresa para crescer sem dívidas caras."
+          specs={[
+            "Pesados: R$ 200k a R$ 700k+",
+            "Prazo de 100 meses",
+            "Taxa Total de 12% a 14% (~1,4% a.a.)",
+            "Opções 0% Entrada",
+            "Plano 50% Parcelinha"
+          ]}
+          actionText="Simular Alavancagem"
+          actionHref="#diagnostico"
+        >
+          <svg slot="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A3E635" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="2" x2="12" y2="22"/>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </SolutionCard>
+
+      </div>
+
+      <!-- ================= O ARGUMENTO LÓGICO DE CONTRASTE FINANCEIRO ================= -->
+      <div class="contrast-section">
+        
+        <div class="contrast-header" data-blur-scroll>
+          <div class="contrast-kicker">
+            <span>ANÁLISE COMPARATIVA DE CUSTO</span>
+          </div>
+          <h3 class="contrast-title">O Contraste Financeiro que os Bancos não Contam</h3>
+          <p class="contrast-subtitle">
+            Veja a diferença matemática entre comprometer anos com juros bancários compostos ou planejar sua conquista com inteligência e taxas a partir de 12% para todo o contrato.
+          </p>
+        </div>
+
+        <div class="contrast-grid">
+          
+          <!-- Lado Negativo: Financiamento Bancário -->
+          <ContrastCard
+            variant="danger"
+            badgeText="✕ Ineficiência de Capital"
+            title="No Financiamento Bancário"
+            punch="Você adquire 1 bem e no final pagou de 2 a 3 vezes o valor dele."
+            metricCaption="Custo Real Final"
+            metricVal="220% a 300% do valor (Você paga 2 a 3 bens)"
+          >
+            <li class="contrast-item">
+              <span class="contrast-icon">✕</span>
+              <span><strong>Juros Compostos de 10% a 14% ao Ano:</strong> Parcelas infladas que transferem sua riqueza para o banco em vez de construir seu patrimônio.</span>
+            </li>
+            <li class="contrast-item">
+              <span class="contrast-icon">✕</span>
+              <span><strong>Entrada Obrigatória de 20% a 30%:</strong> Descapitalização pesada logo no início (R$ 60k a R$ 100k+), secando sua reserva de emergência.</span>
+            </li>
+            <li class="contrast-item">
+              <span class="contrast-icon">✕</span>
+              <span><strong>Taxas Embutidas, TAC e Seguros:</strong> Venda casada de seguros obrigatórios e IOF encarecendo brutalmente o Custo Efetivo Total (CET).</span>
+            </li>
+            <li class="contrast-item">
+              <span class="contrast-icon">✕</span>
+              <span><strong>Amortização Lenta:</strong> O bem perde valor de mercado com o tempo enquanto o saldo devedor permanece elevado nos primeiros anos.</span>
+            </li>
+          </ContrastCard>
+
+          <!-- Lado Positivo: Planejamento Lifecon -->
+          <ContrastCard
+            variant="positive"
+            badgeText="✓ Alta Eficiência Patrimonial"
+            title="No Planejamento Lifecon"
+            punch="Você compra à vista com poder de negociação e taxa administrativa diluída."
+            metricCaption="Custo Real Final"
+            metricVal="Apenas o bem + Taxa de 12% a 18% total (Zero juros)"
+          >
+            <li class="contrast-item">
+              <span class="contrast-icon">✓</span>
+              <span><strong>Taxa Administrativa Pré-Fixada (Sem Juros):</strong> Ao contrário do financiamento, onde você paga juros compostos que dobram a dívida, no consórcio existe apenas uma taxa de administração diluída ao longo de todo o plano — gerando uma economia de até 60% no custo final do seu bem.</span>
+            </li>
+            <li class="contrast-item">
+              <span class="contrast-icon">✓</span>
+              <span><strong>Opções com 0% de Entrada:</strong> Alternativas que não exigem aporte inicial à vista, preservando seu capital de giro e sua reserva financeira rendendo com segurança.</span>
+            </li>
+            <li class="contrast-item">
+              <span class="contrast-icon">✓</span>
+              <span><strong>Lance Embutido de até 30% da Carta:</strong> Utilize parte da própria carta de crédito contratada como oferta de lance para acelerar sua contemplação sem desembolsar recursos próprios.</span>
+            </li>
+            <li class="contrast-item">
+              <span class="contrast-icon">✓</span>
+              <span><strong>Plano 50% para Preservar o Caixa:</strong> Modalidade estratégica para frotas e pesados que permite pagar meia parcela até a contemplação, mantendo o fluxo de caixa da empresa saudável.</span>
+            </li>
+            <li class="contrast-item">
+              <span class="contrast-icon">✓</span>
+              <span><strong>Poder de Compra Blindado (INCC e IPCA):</strong> O crédito reajusta anualmente para acompanhar a valorização real de mercado, assegurando seu poder de compra à vista em qualquer época.</span>
+            </li>
+            <li class="contrast-item">
+              <span class="contrast-icon">✓</span>
+              <span><strong>Administradoras Líderes de Mercado:</strong> Planos estruturados através de referências nacionais consolidadas como <strong>Embracon</strong> e <strong>CNVW</strong> (Consórcio Nacional Volkswagen), associadas à ABAC e auditadas pelo Banco Central.</span>
+            </li>
+          </ContrastCard>
+
+        </div>
+
+      </div>
+
+      <!-- Banner de Fechamento com CTA Aural Design System -->
+      <div class="sec-cta-banner gb" data-spot data-blur-scroll>
+        <div class="banner-text-side">
+          <span class="banner-kicker">PRÓXIMO PASSO ESTRATÉGICO</span>
+          <h3 class="banner-title">Pronto para transformar planos em conquistas concretas?</h3>
+          <p class="banner-desc">
+            Apresentamos um estudo de viabilidade gratuito e sem compromisso, cruzando as maiores administradoras do país com o seu momento financeiro.
+          </p>
+        </div>
+
+        <Button href="#diagnostico" text="Quero Simular Meu Objetivo" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SEÇÃO 03: O DIAGNÓSTICO GUIADO LIFECON (A MÁQUINA DE LEADS) ================= -->
+  <section class="sec-diagnostic" id="diagnostico">
+    <div class="diag-container">
+
+      <!-- Header Editorial da Seção -->
+      <header class="diag-header" data-blur-scroll>
+        <div class="diag-kicker">
+          <span class="diag-kicker-dot"></span>
+          <span>03 · CONSULTORIA DE VIABILIDADE</span>
+        </div>
+        <h2 class="diag-title">
+          Descubra qual planejamento financeiro<br>
+          <em>faz sentido para você.</em>
+        </h2>
+        <p class="diag-subtitle">
+          Responda a 4 perguntas simples e receba um estudo preliminar de viabilidade diretamente com nossa equipe especializada, sem nenhum compromisso e com números 100% transparentes.
+        </p>
+      </header>
+
+      <!-- Console Interativo (Grid Duplo: Formulário Guiado + HUD ao Vivo) -->
+      <div class="diag-console">
+
+        <!-- LADO ESQUERDO: Cartão Principal com Passos -->
+        <div class="diag-main-card gb" data-spot data-blur-scroll id="diag-main-box">
+
+          <!-- Barra de Progresso e Cabeçalho do Passo -->
+          <div class="diag-step-header">
+            <div class="diag-step-meta">
+              <span class="diag-step-counter" id="diag-step-indicator">PASSO 01 DE 04</span>
+              <span class="diag-step-pill-indicator" id="diag-step-status">OBJETIVO PRINCIPAL</span>
+            </div>
+            <div class="diag-progress-track">
+              <div class="diag-progress-fill" id="diag-progress-fill" style="width: 25%;"></div>
+            </div>
+            <h3 class="diag-step-prompt" id="diag-step-prompt">Qual é o plano principal que você deseja colocar em prática?</h3>
+            <p class="diag-step-desc" id="diag-step-desc">Selecione uma das frentes para direcionarmos as melhores tabelas conveniadas.</p>
+          </div>
+
+          <!-- ================= PASSO 1: OBJETIVO ================= -->
+          <div class="diag-step-panel active" id="step-panel-1">
+            <div class="diag-choice-grid">
+              
+              <div class="diag-choice-card selected" data-value="imoveis" data-target="step-1">
+                <div class="diag-choice-top">
+                  <div class="diag-choice-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                      <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
+                  </div>
+                  <span class="diag-choice-check">✓</span>
+                </div>
+                <div>
+                  <h4 class="diag-choice-title">Imóveis & Construção</h4>
+                  <span class="diag-choice-tag">SFH · Aquisição · Construção · Terrenos</span>
+                </div>
+              </div>
+
+              <div class="diag-choice-card" data-value="veiculos" data-target="step-1">
+                <div class="diag-choice-top">
+                  <div class="diag-choice-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C2.1 10.9 2 11.2 2 11.5V16c0 .6.4 1 1 1h2"/>
+                      <circle cx="7" cy="17" r="2"/>
+                      <path d="M9 17h6"/>
+                      <circle cx="17" cy="17" r="2"/>
+                    </svg>
+                  </div>
+                  <span class="diag-choice-check">✓</span>
+                </div>
+                <div>
+                  <h4 class="diag-choice-title">Automóveis & Motos</h4>
+                  <span class="diag-choice-tag">Zero Km · Seminovos · Utilitários</span>
+                </div>
+              </div>
+
+              <div class="diag-choice-card" data-value="pesados" data-target="step-1">
+                <div class="diag-choice-top">
+                  <div class="diag-choice-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="1" y="3" width="15" height="13"/>
+                      <polygon points="16 8 20 8 23 11 23 16 16 16 8"/>
+                      <circle cx="5.5" cy="18.5" r="2.5"/>
+                      <circle cx="18.5" cy="18.5" r="2.5"/>
+                    </svg>
+                  </div>
+                  <span class="diag-choice-check">✓</span>
+                </div>
+                <div>
+                  <h4 class="diag-choice-title">Pesados & Maquinário</h4>
+                  <span class="diag-choice-tag">Caminhões · Agrícola · Plano 50%</span>
+                </div>
+              </div>
+
+              <div class="diag-choice-card" data-value="patrimonio" data-target="step-1">
+                <div class="diag-choice-top">
+                  <div class="diag-choice-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="12" y1="2" x2="12" y2="22"/>
+                      <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
+                  </div>
+                  <span class="diag-choice-check">✓</span>
+                </div>
+                <div>
+                  <h4 class="diag-choice-title">Alavancagem Patrimonial</h4>
+                  <span class="diag-choice-tag">Construção de Renda · Locação</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ================= PASSO 2: VOLUME DE CRÉDITO ================= -->
+          <div class="diag-step-panel" id="step-panel-2">
+            <div class="diag-tier-grid" id="diag-tier-container">
+              <!-- Renderizado dinamicamente via JavaScript conforme o objetivo -->
+            </div>
+          </div>
+
+          <!-- ================= PASSO 3: HORIZONTE & ESTRATÉGIA ================= -->
+          <div class="diag-step-panel" id="step-panel-3">
+            <div class="diag-strategy-list">
+              
+              <div class="diag-strategy-card selected" data-value="curto" data-target="step-3">
+                <div class="strat-badge-icon">⚡</div>
+                <div class="strat-content">
+                  <span class="strat-title">Aceleração / Curto Prazo (50 a 80 meses)</span>
+                  <span class="strat-desc">Estratégia de contemplação planejada utilizando Lance Livre ou Lance Embutido de até 30% da própria carta para antecipar a conquista sem tirar recursos do bolso.</span>
+                </div>
+              </div>
+
+              <div class="diag-strategy-card" data-value="medio" data-target="step-3">
+                <div class="strat-badge-icon">⚖️</div>
+                <div class="strat-content">
+                  <span class="strat-title">Equilíbrio / Médio Prazo (90 a 165 meses)</span>
+                  <span class="strat-desc">Oferta de Lance Fixo pré-determinado (25% a 50%) para concorrer em igualdade pela Loteria Federal, sem disputar com grandes lances.</span>
+                </div>
+              </div>
+
+              <div class="diag-strategy-card" data-value="longo" data-target="step-3">
+                <div class="strat-badge-icon">🛡️</div>
+                <div class="strat-content">
+                  <span class="strat-title">Disciplina / Longo Prazo (180 a 240 meses)</span>
+                  <span class="strat-desc">Parcelas reduzidas no Plano Estendido de até 20 anos (menores que o aluguel) ou modalidade Plano 50% para pesados.</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ================= PASSO 4: ORÇAMENTO & CAPTURA ================= -->
+          <div class="diag-step-panel" id="step-panel-4">
+            
+            <p style="font-size: 13.5px; color: var(--ink-2); margin-bottom: 12px; font-weight: 500;">
+              Qual faixa de parcela mensal é confortável para o seu orçamento?
+            </p>
+            <div class="diag-budget-row" id="diag-budget-container">
+              <div class="diag-budget-pill selected" data-value="Abaixo de R$ 2.000">Até R$ 2.000 / mês</div>
+              <div class="diag-budget-pill" data-value="R$ 2.000 a R$ 4.000">R$ 2.000 a R$ 4.000 / mês</div>
+              <div class="diag-budget-pill" data-value="R$ 4.000 a R$ 7.000">R$ 4.000 a R$ 7.000 / mês</div>
+              <div class="diag-budget-pill" data-value="Acima de R$ 7.000">Acima de R$ 7.000 / mês</div>
+            </div>
+
+            <p style="font-size: 13.5px; color: var(--ink-2); margin-bottom: 12px; font-weight: 500;">
+              Onde deseja receber a simulação oficial das administradoras conveniadas?
+            </p>
+            <div class="diag-form-fields">
+              <label class="diag-field">
+                <input type="text" id="diag-input-nome" placeholder=" " autocomplete="name" required>
+                <span>Seu Nome Completo</span>
+              </label>
+
+              <label class="diag-field">
+                <input type="tel" id="diag-input-whatsapp" placeholder=" " autocomplete="tel" maxlength="15" required>
+                <span>WhatsApp com DDD</span>
+              </label>
+            </div>
+
+            <div class="diag-privacy-note">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+              <span>Seus dados são confidenciais. Não enviamos spam nem faremos ligações invasivas.</span>
+            </div>
+
+          </div>
+
+          <!-- ================= TELA DE SUCESSO ================= -->
+          <div class="diag-success-panel" id="diag-success-panel">
+            <div class="diag-success-icon">✓</div>
+            <h3 class="diag-success-title">Estudo Preliminar <em>Pronto!</em></h3>
+            <p class="diag-success-desc">
+              Recebemos suas preferências. Nossa assessoria já preparou o estudo comparativo oficial com as melhores oportunidades da Embracon e CNVW.
+            </p>
+            <Button
+              href="#"
+              target="_blank"
+              id="diag-success-whatsapp-btn"
+              text="Abrir Minha Simulação no WhatsApp"
+            />
+          </div>
+
+          <!-- Navegação dos Passos (Botões Voltar / Avançar) -->
+          <div class="diag-nav-row" id="diag-nav-row">
+            <button type="button" class="btn-diag-back" id="btn-diag-prev" style="visibility: hidden;">
+              ← Voltar
+            </button>
+
+            <Button
+              type="button"
+              class="btn-diag-next"
+              id="btn-diag-next"
+              text="Continuar Passo 2"
+              labelId="diag-btn-text"
+              labelCloneId="diag-btn-text-clone"
+            />
+          </div>
+
+        </div>
+
+        <!-- LADO DIREITO: O HUD "Raio-X do seu Planejamento" -->
+        <aside class="diag-hud-card gb" data-spot data-blur-scroll>
+          <div class="hud-header">
+            <div class="hud-title-wrap">
+              <span class="hud-radar-dot"></span>
+              <span class="hud-title">Raio-X do Planejamento</span>
+            </div>
+            <span class="hud-live-tag">Tempo Real</span>
+          </div>
+
+          <div class="hud-spec-list">
+            <div class="hud-spec-item">
+              <span class="hud-spec-label">Objetivo Selecionado</span>
+              <span class="hud-spec-val" id="hud-val-objetivo">Imóveis & Construção</span>
+            </div>
+
+            <div class="hud-spec-item">
+              <span class="hud-spec-label">Faixa de Crédito Estimada</span>
+              <span class="hud-spec-val highlight-gold" id="hud-val-credito">R$ 250k a R$ 500k</span>
+            </div>
+
+            <div class="hud-spec-item">
+              <span class="hud-spec-label">Estratégia Recomendada</span>
+              <span class="hud-spec-val" id="hud-val-estrategia">Aceleração / Curto Prazo</span>
+            </div>
+
+            <div class="hud-spec-item">
+              <span class="hud-spec-label">Lance Embutido Autorizado</span>
+              <span class="hud-spec-val highlight-cyan" id="hud-val-lance">Até 30% da Carta</span>
+            </div>
+
+            <div class="hud-spec-item">
+              <span class="hud-spec-label">Indexador Oficial de Compra</span>
+              <span class="hud-spec-val" id="hud-val-indexador">INCC (Construção Civil)</span>
+            </div>
+
+            <div class="hud-spec-item">
+              <span class="hud-spec-label">Administradoras Homologadas</span>
+              <span class="hud-spec-val" id="hud-val-parceiras">Embracon · CNVW</span>
+            </div>
+          </div>
+
+          <!-- Card de Benefício Financeiro -->
+          <div class="hud-benefit-banner">
+            <div class="benefit-title">
+              <span>★</span> Economia Patrimonial Comprovada
+            </div>
+            <p class="benefit-desc">
+              Sem juros compostos. Taxa de administração a partir de 12% total diluída no contrato (~1% ao ano!).
+            </p>
+          </div>
+
+          <!-- Compliance BACEN -->
+          <div class="hud-compliance-strip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <span>Fiscalizado pelo Banco Central do Brasil · ABAC</span>
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SEÇÃO 04: AUTORIDADE, HUMANIZAÇÃO & OS 4 PILARES ================= -->
+  <section class="sec-authority" id="sobre">
+    <div class="auth-container">
+
+      <!-- Header Editorial da Seção -->
+      <header class="auth-header" data-blur-scroll>
+        <div class="auth-kicker">
+          <span class="auth-kicker-dot"></span>
+          <span>04 · LIDERANÇA & COMPROMISSO PESSOAL</span>
+        </div>
+        <h2 class="auth-title">
+          Quem está por trás<br>
+          <em>da Lifecon?</em>
+        </h2>
+        <p class="auth-subtitle">
+          Antes de qualquer número, cota ou contrato, existe um nome, uma trajetória sólida e o compromisso ético inegociável de construir relacionamentos de longo prazo com você.
+        </p>
+      </header>
+
+      <!-- Layout Dual de Alta Autoridade (Esquerda: Card Retrato Presidencial / Direita: Manifesto & 4 Pilares) -->
+      <div class="auth-layout">
+
+        <!-- LADO ESQUERDO: Retrato Executivo & Credenciais Pessoais -->
+        <div class="auth-portrait-card gb" data-spot data-blur-scroll>
+          
+          <div class="portrait-image-wrapper">
+            <img src="/assets/foto-rafael-borges.png" alt="Rafael Gomes Borges - Idealizador e Consultor Estratégico da Lifecon" class="portrait-photo" loading="lazy">
+            <div class="portrait-overlay-gradient"></div>
+            
+            <!-- Badge Flutuante de Verificação -->
+            <div class="portrait-status-badge">
+              <span class="status-live-dot"></span>
+              <span>Atendimento Pessoal Direto</span>
+            </div>
+          </div>
+
+          <div class="portrait-info-block">
+            <div class="portrait-names">
+              <h3 class="portrait-name">Rafael Gomes Borges</h3>
+              <span class="portrait-role">Idealizador & Consultor Patrimonial · Lifecon</span>
+            </div>
+
+            <!-- Chips de Credenciais & Integridade -->
+            <div class="portrait-chips">
+              <span class="auth-chip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                +10 Anos de Mercado
+              </span>
+              <span class="auth-chip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+                Homologado BACEN · ABAC
+              </span>
+              <span class="auth-chip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+                Zero Promessas Irreais
+              </span>
+            </div>
+
+            <p class="portrait-bio-short">
+              Especialista em alavancagem de cartas de crédito e estruturação estratégica para quem deseja construir patrimônio seguro, sem pagar juros bancários.
+            </p>
+
+            <!-- CTA Direto com o Rafael via WhatsApp -->
+            <Button
+              href="https://wa.me/5521972838954?text=Ol%C3%A1%2C%20Rafael%21%20Conheci%20a%20Lifecon%20pelo%20site%20e%20gostaria%20de%20conversar%20diretamente%20com%20voc%C3%AA%20sobre%20o%20meu%20planejamento."
+              target="_blank"
+              class="btn-portrait-cta"
+              text="Falar com o Rafael no WhatsApp"
+            />
+          </div>
+
+        </div>
+
+        <!-- LADO DIREITO: Carta Aberta + Os 4 Pilares Inegociáveis -->
+        <div class="auth-content-side">
+
+          <!-- Carta Aberta do Fundador -->
+          <div class="auth-letter-card gb" data-spot data-blur-scroll>
+            <div class="letter-top-meta">
+              <span class="letter-kicker">CARTA ABERTA AOS NOSSOS CLIENTES</span>
+              <div class="quote-sign" aria-hidden="true">“</div>
+            </div>
+
+            <div class="letter-body">
+              <p class="letter-lead">
+                Ao longo de anos atuando na área comercial e financeira, vi de perto como o mercado muitas vezes trata as pessoas apenas como <em>números de contrato</em> para bater metas corporativas.
+              </p>
+              
+              <p>
+                No segmento de consórcios, isso se torna ainda mais delicado: promessas milagrosas de contemplação rápida e discursos agressivos de venda acabam gerando desilusão em quem só queria planejar a vida com segurança.
+              </p>
+
+              <blockquote class="letter-pullquote">
+                <span>"A Lifecon nasceu para ser o contraponto absoluto disso. Nosso papel não é empurrar uma cota; nosso compromisso é sentar com você, entender a sua realidade de caixa e caminhar lado a lado até a entrega da sua chave."</span>
+              </blockquote>
+
+              <p>
+                Aqui, a sua confiança é tratada com o respeito que ela merece. Antes de vender qualquer plano, queremos entender profundamente o seu.
+              </p>
+            </div>
+
+            <!-- Bloco de Assinatura Institucional -->
+            <div class="letter-signature-strip">
+              <div class="signature-details">
+                <span class="signature-name">Rafael Gomes Borges</span>
+                <span class="signature-title">Fundador & Consultor Patrimonial · Lifecon</span>
+              </div>
+              <div class="signature-badge">
+                <span class="sig-seal-dot"></span>
+                <span>Compromisso Ético Registrado</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Os 4 Pilares Inegociáveis (Micro-Bento 2x2) -->
+          <div class="auth-pillars-block" data-blur-scroll>
+            <div class="pillars-header">
+              <h4 class="pillars-title">Os 4 Pilares Inegociáveis da Lifecon</h4>
+              <span class="pillars-subtitle">Diretrizes obrigatórias que regem cada simulação, cota e atendimento prestado:</span>
+            </div>
+
+            <div class="pillars-grid">
+              
+              <!-- Pilar 1 -->
+              <div class="pillar-card gb" data-spot>
+                <div class="pillar-top">
+                  <span class="pillar-num gold-glow">01</span>
+                  <div class="pillar-tag">Ética Absoluta</div>
+                </div>
+                <h5 class="pillar-card-title">Transparência Radical</h5>
+                <p class="pillar-card-desc">
+                  Toda taxa administrativa, fundo de reserva, seguro e histórico real de assembleias são apresentados na mesa antes de qualquer assinatura. Sem entrelinhas ou surpresas.
+                </p>
+              </div>
+
+              <!-- Pilar 2 -->
+              <div class="pillar-card gb" data-spot>
+                <div class="pillar-top">
+                  <span class="pillar-num cyan-glow">02</span>
+                  <div class="pillar-tag">Saúde de Caixa</div>
+                </div>
+                <h5 class="pillar-card-title">Planejamento Antes da Venda</h5>
+                <p class="pillar-card-desc">
+                  Analisamos sua renda familiar e capacidade real de aporte. Se o plano comprometer sua reserva ou não fizer sentido matemático para os próximos anos, nós não o recomendamos.
+                </p>
+              </div>
+
+              <!-- Pilar 3 -->
+              <div class="pillar-card gb" data-spot>
+                <div class="pillar-top">
+                  <span class="pillar-num gold-glow">03</span>
+                  <div class="pillar-tag">Sem Robôs</div>
+                </div>
+                <h5 class="pillar-card-title">Proximidade Real</h5>
+                <p class="pillar-card-desc">
+                  Você não fala com centrais terceirizadas nem atendentes robotizados. Você tem acesso direto ao especialista que conhece a sua história, o seu objetivo e o seu nome.
+                </p>
+              </div>
+
+              <!-- Pilar 4 -->
+              <div class="pillar-card gb" data-spot>
+                <div class="pillar-top">
+                  <span class="pillar-num cyan-glow">04</span>
+                  <div class="pillar-tag">Fim a Fim</div>
+                </div>
+                <h5 class="pillar-card-title">Acompanhamento Contínuo</h5>
+                <p class="pillar-card-desc">
+                  Nossa relação começa no contrato e continua mensalmente: orientamos estratégias de Lances Livres, Fixos e Embutidos de até 30%, além de suporte documental integral no faturamento.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Banner Institucional de Garantia e Parcerias Homologadas -->
+      <div class="auth-compliance-banner gb" data-spot data-blur-scroll>
+        <div class="compliance-left">
+          <div class="compliance-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="compliance-title">Segurança Institucional & Fiscalização Governamental</h4>
+            <p class="compliance-desc">
+              Todas as cartas comercializadas pela Lifecon são emitidas por administradoras homologadas e auditadas diretamente pelo Banco Central do Brasil (BACEN) e fiscalizadas pela Associação Brasileira de Administradoras de Consórcios (ABAC).
+            </p>
+          </div>
+        </div>
+
+        <div class="compliance-partners">
+          <span class="partner-badge">Embracon</span>
+          <span class="partner-badge">CNVW</span>
+          <span class="partner-badge">Associadas ABAC</span>
+          <span class="partner-badge">Normas BACEN</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SEÇÃO 05: A CENTRAL DE CLAREZA (FAQ INTERATIVO) ================= -->
+  <section class="sec-faq" id="faq">
+    <div class="faq-container">
+
+      <!-- Header Editorial da Seção -->
+      <header class="faq-header" data-blur-scroll>
+        <div class="faq-kicker">
+          <span class="faq-kicker-dot"></span>
+          <span>05 · CENTRAL DE CLAREZA & DESMISTIFICAÇÃO</span>
+        </div>
+        <h2 class="faq-title">
+          A verdade sobre consórcio,<br>
+          <em>sem meias palavras.</em>
+        </h2>
+        <p class="faq-subtitle">
+          Tire suas dúvidas com quem joga limpo sobre regras, prazos, lances e funcionamento real. Sem enrolação de vendedor, com a transparência de quem joga limpo pelo seu patrimônio.
+        </p>
+      </header>
+
+      <!-- Barra de Filtros Interativos por Categoria -->
+      <div class="faq-filter-bar" data-blur-scroll role="tablist" aria-label="Filtrar dúvidas por assunto">
+        <button type="button" class="faq-filter-btn active" data-filter="all">
+          <span>Todas as Dúvidas</span>
+          <span class="faq-filter-count">(7)</span>
+        </button>
+        <button type="button" class="faq-filter-btn" data-filter="lances">
+          <span>Lances & Contemplação</span>
+          <span class="faq-filter-count">(3)</span>
+        </button>
+        <button type="button" class="faq-filter-btn" data-filter="custos">
+          <span>Taxas & Parcelas</span>
+          <span class="faq-filter-count">(2)</span>
+        </button>
+        <button type="button" class="faq-filter-btn" data-filter="seguranca">
+          <span>Segurança & Regras</span>
+          <span class="faq-filter-count">(2)</span>
+        </button>
+      </div>
+
+      <!-- Lista dos 7 Cards de Accordion -->
+      <div class="faq-list" id="faq-accordion-list">
+
+        <!-- FAQ 1 -->
+        <article class="faq-item gb active" data-spot data-blur-scroll data-cat="seguranca">
+          <button type="button" class="faq-trigger" aria-expanded="true">
+            <div class="faq-trigger-content">
+              <span class="faq-num">01</span>
+              <div class="faq-meta-wrap">
+                <span class="faq-category-tag">Segurança Regulatória & BACEN</span>
+                <h3 class="faq-question-text">A Lifecon garante que serei contemplado rapidamente ou em data fixa?</h3>
+              </div>
+            </div>
+            <div class="faq-toggle-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-inner">
+              <div class="faq-answer-text">
+                <p>
+                  <strong>Nunca.</strong> Desconfie imediatamente de qualquer empresa, vendedor ou corretor que prometa contemplação com prazo garantido — essa prática é expressamente proibida pelo Banco Central do Brasil e pode constituir golpe financeiro.
+                </p>
+                <p>
+                  No sistema de consórcios regulamentado, as contemplações ocorrem exclusivamente por <strong>Sorteio</strong> e por <strong>Lances</strong> nas assembleias mensais. O papel da assessoria Lifecon é analisar a fundo o histórico de lances do grupo para traçar estratégias matemáticas coerentes com a sua disponibilidade de aporte.
+                </p>
+              </div>
+              <div class="faq-takeaway-box">
+                <span class="faq-takeaway-star">★</span>
+                <span><strong>Regra de Ouro:</strong> Promessa de cota contemplada com data certa é fraude. Na Lifecon, trabalhamos com probabilidade estatística, histórico real e transparência radical.</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- FAQ 2 -->
+        <article class="faq-item gb" data-spot data-blur-scroll data-cat="lances">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <div class="faq-trigger-content">
+              <span class="faq-num">02</span>
+              <div class="faq-meta-wrap">
+                <span class="faq-category-tag">Estratégia de Lances & Alavancagem</span>
+                <h3 class="faq-question-text">Como funciona a oferta de lances para antecipar a compra? Preciso ter dinheiro em mãos?</h3>
+              </div>
+            </div>
+            <div class="faq-toggle-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-inner">
+              <div class="faq-answer-text">
+                <p>
+                  <strong>Não necessariamente!</strong> Essa é uma das maiores vantagens estratégicas do consórcio moderno trabalhado pela Lifecon. Além do Lance Livre tradicional (onde quem oferta o maior percentual com recursos próprios vence), atuamos com duas modalidades fundamentais:
+                </p>
+                <p>
+                  <strong>1. Lance Embutido (25% a 30%):</strong> Você pode utilizar de 25% a 30% do próprio crédito contratado para compor seu lance. Ou seja, você antecipa sua contemplação sem precisar desembolsar dinheiro vivo na largada.
+                </p>
+                <p>
+                  <strong>2. Lance Fixo (faixas de 25%, 28%, 31% ou 50%):</strong> Todos os consorciados que ofertam nessa faixa concorrem em pé de igualdade, com critério de desempate auditado pela pedra-chave da <em>Loteria Federal</em>. Isso impede que apenas quem tem grandes fortunas seja contemplado.
+                </p>
+              </div>
+              <div class="faq-takeaway-box">
+                <span class="faq-takeaway-star">★</span>
+                <span><strong>Estratégia Lifecon:</strong> Você pode combinar Lance Embutido com recursos próprios ou FGTS para turbinar sua oferta sem asfixiar seu caixa pessoal.</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- FAQ 3 -->
+        <article class="faq-item gb" data-spot data-blur-scroll data-cat="lances">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <div class="faq-trigger-content">
+              <span class="faq-num">03</span>
+              <div class="faq-meta-wrap">
+                <span class="faq-category-tag">Imóveis & Normas SFH</span>
+                <h3 class="faq-question-text">Posso utilizar meu saldo do FGTS para a compra de imóvel?</h3>
+              </div>
+            </div>
+            <div class="faq-toggle-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-inner">
+              <div class="faq-answer-text">
+                <p>
+                  <strong>Sim, com total segurança!</strong> Nas modalidades de consórcio imobiliário destinadas à aquisição de moradia própria residencial (ou terreno + construção), você pode usar 100% dos recursos elegíveis da sua conta vinculada do FGTS.
+                </p>
+                <p>
+                  O saldo pode ser empregado para <strong>oferta de lance</strong>, <strong>amortização extraordinária</strong> do saldo devedor ou <strong>abate de até 80% do valor da parcela</strong>, seguindo estritamente as diretrizes do Sistema Financeiro da Habitação (SFH) e da Caixa Econômica Federal.
+                </p>
+              </div>
+              <div class="faq-takeaway-box">
+                <span class="faq-takeaway-star">★</span>
+                <span><strong>Uso Inteligente:</strong> Seu FGTS parado, rendendo abaixo da inflação, pode ser convertido no lance vencedor para conquistar sua casa ou apartamento próprio.</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- FAQ 4 -->
+        <article class="faq-item gb" data-spot data-blur-scroll data-cat="custos">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <div class="faq-trigger-content">
+              <span class="faq-num">04</span>
+              <div class="faq-meta-wrap">
+                <span class="faq-category-tag">Correção Monetária & Poder de Compra</span>
+                <h3 class="faq-question-text">Como funcionam os reajustes anuais das parcelas (INCC e IPCA)? O consórcio fica mais caro?</h3>
+              </div>
+            </div>
+            <div class="faq-toggle-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-inner">
+              <div class="faq-answer-text">
+                <p>
+                  <strong>O reajuste anual não é juro nem penalidade — é a blindagem do seu poder de compra!</strong>
+                </p>
+                <p>
+                  Em consórcios de imóveis, o valor da carta é atualizado anualmente pelo <strong>INCC</strong> (Índice Nacional de Custo da Construção). Em veículos e pesados, a atualização ocorre pelo <strong>IPCA</strong> (inflação oficial).
+                </p>
+                <p>
+                  Isso é fundamental: se você for contemplado no 2º, 4º ou 6º ano de plano, o valor liberado na sua carta de crédito terá subido exatamente na mesma proporção do mercado imobiliário e automotivo. Assim, você garante a compra do bem à vista pelo preço vigente, sem perda de poder aquisitivo.
+                </p>
+              </div>
+              <div class="faq-takeaway-box">
+                <span class="faq-takeaway-star">★</span>
+                <span><strong>Diferença Crucial:</strong> No financiamento, os juros compostos enriquecem o banco. No consórcio, a correção monetária valoriza o seu próprio crédito.</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- FAQ 5 -->
+        <article class="faq-item gb" data-spot data-blur-scroll data-cat="custos">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <div class="faq-trigger-content">
+              <span class="faq-num">05</span>
+              <div class="faq-meta-wrap">
+                <span class="faq-category-tag">Entrada & Taxa de Adesão</span>
+                <h3 class="faq-question-text">Preciso pagar entrada pesada ou taxa antecipada para contratar?</h3>
+              </div>
+            </div>
+            <div class="faq-toggle-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-inner">
+              <div class="faq-answer-text">
+                <p>
+                  <strong>Absolutamente não.</strong> Enquanto os financiamentos bancários exigem uma entrada obrigatória de 20% a 30% à vista (muitas vezes drenando R$ 80.000 a R$ 150.000 da sua conta logo no primeiro dia), no consórcio estruturado pela Lifecon você não sofre descapitalização.
+                </p>
+                <p>
+                  Trabalhamos com grupos de <strong>0% de taxa antecipada</strong> e alternativas com taxa antecipada diluída suavemente em até 12 parcelas (apenas 1,2% a 2% do crédito total). Você inicia seu planejamento mantendo sua reserva de emergência rendendo em segurança.
+                </p>
+              </div>
+              <div class="faq-takeaway-box">
+                <span class="faq-takeaway-star">★</span>
+                <span><strong>Preservação de Liquidez:</strong> Seu patrimônio cresce sem que você precise se descapitalizar ou passar aperto financeiro.</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- FAQ 6 -->
+        <article class="faq-item gb" data-spot data-blur-scroll data-cat="seguranca">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <div class="faq-trigger-content">
+              <span class="faq-num">06</span>
+              <div class="faq-meta-wrap">
+                <span class="faq-category-tag">Flexibilidade de Caixa & Imprevistos</span>
+                <h3 class="faq-question-text">O que acontece se eu passar por um imprevisto financeiro durante o plano?</h3>
+              </div>
+            </div>
+            <div class="faq-toggle-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-inner">
+              <div class="faq-answer-text">
+                <p>
+                  <strong>A vida é feita de momentos, e o consórcio é um instrumento flexível.</strong> Caso ocorra uma alteração temporária na sua capacidade de pagamento antes da contemplação, existem saídas estratégicas oficiais:
+                </p>
+                <p>
+                  <strong>1. Redução de Carta:</strong> Você pode solicitar a diminuição da faixa de crédito, o que reduz imediatamente o valor das parcelas futuras para readequar o fluxo de caixa.
+                </p>
+                <p>
+                  <strong>2. Transferência de Cota:</strong> Você pode transferir sua cota com ágio para terceiros com anuência da administradora.
+                </p>
+                <p>
+                  Nossa assessoria estará ao seu lado para intermediar com a administradora a melhor alternativa, sem que você perca seus recursos.
+                </p>
+              </div>
+              <div class="faq-takeaway-box">
+                <span class="faq-takeaway-star">★</span>
+                <span><strong>Assessoria Ativa:</strong> Você nunca fica desamparado em momentos de transição econômica.</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- FAQ 7 -->
+        <article class="faq-item gb" data-spot data-blur-scroll data-cat="seguranca">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <div class="faq-trigger-content">
+              <span class="faq-num">07</span>
+              <div class="faq-meta-wrap">
+                <span class="faq-category-tag">Homologação Oficial & Parceiros</span>
+                <h3 class="faq-question-text">Quais administradoras a Lifecon representa e como verificar a idoneidade?</h3>
+              </div>
+            </div>
+            <div class="faq-toggle-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-inner">
+              <div class="faq-answer-text">
+                <p>
+                  A Lifecon atua exclusivamente com administradoras de grande porte e autoridade máxima no mercado brasileiro, sendo representante autorizada de referências nacionais como a <strong>Embracon</strong> e a <strong>CNVW</strong> (Consórcio Nacional Volkswagen).
+                </p>
+                <p>
+                  Ambas são rigorosamente autorizadas, auditadas e fiscalizadas pelo <strong>Banco Central do Brasil</strong> e associadas ativas à <strong>ABAC</strong> (Associação Brasileira de Administradoras de Consórcios), garantindo décadas de solidez, milhões de bens entregues e prestação de contas pública.
+                </p>
+              </div>
+              <div class="faq-takeaway-box">
+                <span class="faq-takeaway-star">★</span>
+                <span><strong>Solidez Comprovada:</strong> Seu planejamento é gerido por administradoras líderes do país (Embracon e CNVW), com total segurança jurídica e patrimonial.</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Banner Concierge de Suporte Humano Direto -->
+      <div class="faq-help-card gb" data-spot data-blur-scroll>
+        <div class="faq-help-info">
+          <div class="faq-help-badge">
+            <span class="sig-seal-dot"></span>
+            <span>ATENDIMENTO HUMANO DIRETO</span>
+          </div>
+          <h4 class="faq-help-title">Ainda ficou com alguma dúvida sobre o seu caso?</h4>
+          <p class="faq-help-desc">
+            Cada família e cada empresa tem um fluxo de caixa diferente. Mande uma mensagem diretamente para o Rafael Borges no WhatsApp e receba um esclarecimento técnico sem nenhum compromisso.
+          </p>
+        </div>
+
+        <Button
+          href="https://wa.me/5521972838954?text=Ol%C3%A1%2C%20Rafael%21%20Estou%20com%20uma%20d%C3%BAvida%20espec%C3%ADfica%20sobre%20o%20meu%20planejamento%20e%20gostaria%20de%20conversar%20direto%20com%20voc%C3%AA."
+          target="_blank"
+          class="btn-faq-cta"
+          text="Tirar Minha Dúvida no WhatsApp"
+        />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SEÇÃO 06: FECHAMENTO, CONVERSÃO DECISIVA & RODAPÉ INSTITUCIONAL ================= -->
+  <section class="sec-closing" id="contato">
+    <div class="closing-container">
+
+      <!-- Header Editorial da Seção -->
+      <header class="closing-header" data-blur-scroll>
+        <div class="closing-kicker">
+          <span class="closing-kicker-dot"></span>
+          <span>06 · DECISÃO & PLANEJAMENTO</span>
+        </div>
+        <h2 class="closing-title">
+          O primeiro passo para realizar seu objetivo não é assinar um contrato.<br>
+          <em>É entender as suas possibilidades reais.</em>
+        </h2>
+        <p class="closing-subtitle">
+          Agende uma conversa consultiva com a equipe da Lifecon. Sem pressão comercial, sem termos técnicos difíceis e com foco total no que faz sentido para o seu momento financeiro.
+        </p>
+      </header>
+
+      <!-- Cartão Manifesto da Marca -->
+      <div class="closing-manifesto-card gb" data-spot data-blur-scroll>
+        <blockquote class="closing-manifesto-quote">
+          “Antes de vender um plano, queremos entender o seu plano.”
+        </blockquote>
+        <span class="closing-manifesto-author">Rafael Gomes Borges · Idealizador da Lifecon</span>
+      </div>
+
+      <!-- Bento Grid de Decisão e Fechamento -->
+      <div class="closing-grid">
+
+        <!-- LADO ESQUERDO: Cartão Principal de Conversão WhatsApp -->
+        <div class="closing-card closing-card-wpp gb" data-spot data-blur-scroll>
+          <div>
+            <div class="closing-badge-row">
+              <span class="closing-live-badge">
+                <span class="live-dot-green"></span>
+                <span>Atendimento Humano Direto</span>
+              </span>
+              <span class="partner-badge" style="font-size: 11px;">Especialistas Sênior</span>
+            </div>
+
+            <h3 class="closing-card-title" style="margin-top: 18px;">
+              Inicie sua conversa consultiva no WhatsApp
+            </h3>
+            <p class="closing-card-desc">
+              Tire dúvidas específicas, simule opções com <strong>Embracon</strong> e <strong>CNVW</strong> e descubra se o consórcio é a melhor rota para o seu momento, com total transparência.
+            </p>
+
+            <a href="https://wa.me/5521972838954?text=Ol%C3%A1%2C%20Rafael%21%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20cons%C3%B3rcio%20pelo%20WhatsApp." target="_blank" rel="noopener noreferrer" class="closing-phone-display" aria-label="Abrir WhatsApp Oficial da Lifecon">
+              <span class="wpp-brand-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.539 1.77.822 2.791.822 3.18 0 5.767-2.587 5.767-5.766.001-3.18-2.585-5.768-5.767-5.768zm0-2c4.28 0 7.767 3.487 7.767 7.768 0 4.281-3.487 7.766-7.767 7.766-1.321 0-2.569-.345-3.666-.952l-5.365 1.408 1.432-5.234c-.707-1.164-1.099-2.52-1.099-3.988 0-4.281 3.486-7.768 7.698-7.768z"/>
+                </svg>
+              </span>
+              <div class="wpp-badge-text">
+                <span class="wpp-badge-label">Canal Direto Oficial</span>
+                <span class="wpp-badge-val">
+                  WhatsApp Lifecon
+                  <span class="wpp-live-pill" title="Disponível agora"></span>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <Button
+              href="https://wa.me/5521972838954?text=Ol%C3%A1%2C%20Rafael%21%20Gostaria%20de%20agendar%20uma%20conversa%20consultiva%20com%20a%20Lifecon%20sobre%20o%20meu%20plano."
+              target="_blank"
+              class="btn-closing-main"
+              text="Iniciar Minha Conversa no WhatsApp Agora"
+            />
+            <div class="closing-micro-note">
+              <span>✓ Resposta ágil</span>
+              <span>•</span>
+              <span>Sem pressão comercial</span>
+              <span>•</span>
+              <span>Atendimento personalizado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- LADO DIREITO: Como Funciona Sua Consultoria -->
+        <div class="closing-card closing-steps-card gb" data-spot data-blur-scroll>
+          <div>
+            <h4 class="closing-steps-title">O que esperar da sua conversa:</h4>
+            <ul class="closing-step-list">
+              <li class="closing-step-item">
+                <span class="closing-step-num">01</span>
+                <div class="closing-step-content">
+                  <h5>Escuta Ativa do seu Orçamento</h5>
+                  <p>Entendemos sua real capacidade de aporte mensal para garantir parcelas saudáveis e sem riscos de aperto.</p>
+                </div>
+              </li>
+              <li class="closing-step-item">
+                <span class="closing-step-num">02</span>
+                <div class="closing-step-content">
+                  <h5>Estudo Comparativo Oficial</h5>
+                  <p>Cruzamos seu plano com as melhores condições vigentes da Embracon e CNVW, apresentando números 100% transparentes.</p>
+                </div>
+              </li>
+              <li class="closing-step-item">
+                <span class="closing-step-num">03</span>
+                <div class="closing-step-content">
+                  <h5>Estratégia de Lances & Prazos</h5>
+                  <p>Orientamos táticas de Lance Embutido (até 30%), Lance Fixo ou Sorteio para que você atinja seu objetivo sem falsas promessas.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div style="padding-top: 10px; border-top: 1px solid rgba(255, 255, 255, 0.08);">
+            <a href="#diagnostico" class="card-action-link" style="margin-top: 0;">
+              <span>Prefere preencher a simulação guiada primeiro?</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Card Regulatório Obrigatório BACEN / ABAC -->
+      <div class="closing-compliance-card gb" data-spot data-blur-scroll>
+        <div class="compliance-card-left">
+          <div class="compliance-card-shield" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <p class="compliance-card-text">
+            <strong>Aviso Obrigatório BACEN:</strong> A Lifecon atua como representação e assessoria comercial autorizada de administradoras de consórcios devidamente autorizadas e fiscalizadas pelo <strong>Banco Central do Brasil</strong>. O consórcio é um instrumento financeiro de compra planejada em grupo e não assegura data pré-fixada de contemplação por sorteio.
+          </p>
+        </div>
+
+        <div class="compliance-card-badges">
+          <span class="partner-badge">Embracon</span>
+          <span class="partner-badge">CNVW</span>
+          <span class="partner-badge">Associadas ABAC</span>
+          <span class="partner-badge">Fiscalização BACEN</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= MOTOR GSAP & CANVAS FRAME SEQUENCE SCRUBBING ================= -->
+  <script is:inline>
+    (function () {
+      'use strict';
+
+      // 1. Registro dos Plugins GSAP
+      gsap.registerPlugin(ScrollTrigger);
+
+      // 2. Elementos DOM
+      var canvas = document.getElementById('hero-canvas');
+      var ctx = canvas.getContext('2d', { alpha: false });
+      var textLayer = document.getElementById('hero-text-layer');
+      var scrimOverlay = document.getElementById('hero-scrim');
+      var scrollCue = document.getElementById('hero-scroll-cue');
+
+      // 3. Configurações da Sequência de Quadros
+      var TOTAL_FRAMES = 120;
+      var isMobile = window.innerWidth < 992;
+      var framesPath = isMobile ? '/assets/frames-mobile/' : '/assets/frames-desktop/';
+      
+      var images = [];
+      var currentFrameIndex = 0;
+      var isFirstFrameRendered = false;
+
+      // Formata índice: 0 -> "frame_0000.webp"
+      function getFrameFileName(index) {
+        var str = index.toString();
+        while (str.length < 4) str = '0' + str;
+        return framesPath + 'frame_' + str + '.webp';
+      }
+
+      // Redimensionamento Otimizado do Canvas
+      function resizeCanvas() {
+        var rect = canvas.getBoundingClientRect();
+        // Clamping de DPR: 1.5 no mobile e 2 no desktop (elimina exaustão de GPU em celulares modestos)
+        var dpr = Math.min(window.devicePixelRatio || 1, isMobile ? 1.5 : 2);
+        
+        canvas.width = Math.round(rect.width * dpr);
+        canvas.height = Math.round(rect.height * dpr);
+
+        if (ctx) {
+          ctx.imageSmoothingEnabled = true;
+          ctx.imageSmoothingQuality = isMobile ? 'medium' : 'high';
+        }
+
+        renderFrame(currentFrameIndex);
+      }
+
+      // Renderiza Quadro com object-fit: cover perfeito e zero flicker
+      function renderFrame(index) {
+        if (!ctx || !canvas.width || !canvas.height) return;
+
+        // Se o quadro específico ainda estiver em trânsito de download, usa o quadro carregado mais próximo
+        var targetImg = images[index];
+        if (!targetImg || !targetImg.complete || targetImg.naturalWidth === 0) {
+          // Busca para trás
+          var found = false;
+          for (var i = index - 1; i >= 0; i--) {
+            if (images[i] && images[i].complete && images[i].naturalWidth !== 0) {
+              targetImg = images[i];
+              found = true;
+              break;
+            }
+          }
+          if (!found) {
+            // Busca para frente
+            for (var j = index + 1; j < TOTAL_FRAMES; j++) {
+              if (images[j] && images[j].complete && images[j].naturalWidth !== 0) {
+                targetImg = images[j];
+                break;
+              }
+            }
+          }
+        }
+
+        if (!targetImg || !targetImg.complete || targetImg.naturalWidth === 0) return;
+
+        currentFrameIndex = index;
+
+        var cw = canvas.width;
+        var ch = canvas.height;
+        var iw = targetImg.naturalWidth;
+        var ih = targetImg.naturalHeight;
+
+        // ================= OBJECT-FIT INTELIGENTE NO MOBILE =================
+        // No mobile: as telas modernas (19.5:9) são mais estreitas que a proporção 9:16 do vídeo.
+        // O logotipo "LIFECON" e "CONSÓRCIOS • PLANEJAMENTO • PATRIMÔNIO" ocupam quase toda a largura (920px de 1080px).
+        // Portanto, fixamos a escala mobile rigorosamente em (cw / iw) para garantir que
+        // NENHUMA letra de "LIFECON" ou dos subtítulos seja cortada nas bordas em qualquer celular.
+        var scale = isMobile 
+          ? (cw / iw)
+          : Math.max(cw / iw, ch / ih);
+
+        var nw = Math.round(iw * scale);
+        var nh = Math.round(ih * scale);
+
+        // Centralização horizontal absoluta: no mobile nx = 0 (100% de largura visível sem corte)
+        var nx = Math.round((cw - nw) / 2);
+
+        // Ajuste vertical: centraliza perfeitamente no viewport
+        var ny = isMobile 
+          ? Math.round((ch - nh) / 2)
+          : ((nh > ch) ? Math.round((ch - nh) * 0.30) : Math.round((ch - nh) / 2));
+
+        // Preenche o fundo para transição sem emenda caso nh < ch
+        if (isMobile && nh < ch) {
+          ctx.fillStyle = '#000c22';
+          ctx.fillRect(0, 0, cw, ch);
+        }
+
+        // Renderiza o frame no canvas com aceleração direta por GPU
+        ctx.drawImage(targetImg, nx, ny, nw, nh);
+      }
+
+      // Pré-carregamento Inteligente e Prioritário (Zero Race Conditions)
+      function preloadFrames() {
+        // Inicializa o array de instâncias Image
+        for (var i = 0; i < TOTAL_FRAMES; i++) {
+          images[i] = new Image();
+        }
+
+        // PRIORIDADE 1: Quadro 0 (garante renderização imediata, mesmo se em cache)
+        var img0 = images[0];
+        img0.onload = function () {
+          isFirstFrameRendered = true;
+          resizeCanvas();
+          renderFrame(0);
+        };
+        img0.src = getFrameFileName(0);
+        if (img0.complete && img0.naturalWidth !== 0) {
+          img0.onload();
+        }
+
+        // PRIORIDADE 2: Quadros 1 a 20 (área inicial de scroll)
+        for (var k = 1; k <= 20 && k < TOTAL_FRAMES; k++) {
+          (function (idx) {
+            var img = images[idx];
+            img.onload = function () {
+              if (currentFrameIndex === idx) {
+                renderFrame(idx);
+              }
+            };
+            img.src = getFrameFileName(idx);
+          })(k);
+        }
+
+        // PRIORIDADE 3: Restante dos quadros em lotes não-bloqueantes
+        var nextBatchStart = 21;
+        function loadBatch() {
+          var batchSize = isMobile ? 12 : 24;
+          var end = Math.min(nextBatchStart + batchSize, TOTAL_FRAMES);
+          for (var idx = nextBatchStart; idx < end; idx++) {
+            (function (index) {
+              var img = images[index];
+              img.onload = function () {
+                if (currentFrameIndex === index) {
+                  renderFrame(index);
+                }
+              };
+              img.src = getFrameFileName(index);
+            })(idx);
+          }
+          nextBatchStart = end;
+          if (nextBatchStart < TOTAL_FRAMES) {
+            if (window.requestIdleCallback) {
+              window.requestIdleCallback(loadBatch, { timeout: 150 });
+            } else {
+              setTimeout(loadBatch, 30);
+            }
+          }
+        }
+
+        setTimeout(loadBatch, 60);
+      }
+
+      // Animação de Entrada
+      function playEntranceAnimation() {
+        var tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+        tl.from('#hd', {
+          y: -40,
+          opacity: 0,
+          duration: 1.1
+        });
+
+        tl.from('.hero-anim-elem', {
+          y: 40,
+          opacity: 0,
+          duration: 1.2,
+          stagger: 0.12
+        }, '-=0.7');
+
+        var floatBadges = document.getElementById('hero-float-badges');
+        if (floatBadges) {
+          tl.from(floatBadges.querySelectorAll('.hero-float-card'), {
+            scale: 0.75,
+            opacity: 0,
+            duration: 0.9,
+            stagger: 0.15,
+            ease: 'back.out(1.5)'
+          }, '-=0.5');
+        }
+
+        var bottomDock = document.getElementById('hero-bottom-dock');
+        if (bottomDock) {
+          tl.from(bottomDock, {
+            opacity: 0,
+            y: 20,
+            duration: 0.8
+          }, '-=0.4');
+        }
+
+        tl.from(scrollCue, {
+          opacity: 0,
+          duration: 0.8
+        }, '-=0.3');
+      }
+
+      // Configuração Scrollytelling via ScrollTrigger
+      function setupScrollytelling() {
+        var frameState = { frame: 0 };
+        var floatBadges = document.getElementById('hero-float-badges');
+        var bottomDock = document.getElementById('hero-bottom-dock');
+
+        // Master Timeline acoplada ao ScrollTrigger com scrub ultra fluído e sem gargalo de decodificador
+        var masterTl = gsap.timeline({
+          scrollTrigger: {
+            trigger: '#hero-scroll-wrapper',
+            pin: '#hero-pin-target',
+            start: 'top top',
+            end: 'bottom bottom',
+            scrub: 0.15, // Micro-inércia líquida 60/120fps como no ecossistema Apple
+            anticipatePin: 1
+          }
+        });
+
+        // 1. Interpolação contínua dos 120 quadros
+        masterTl.to(frameState, {
+          frame: TOTAL_FRAMES - 1,
+          ease: 'none',
+          duration: 1,
+          onUpdate: function () {
+            var targetIndex = Math.round(frameState.frame);
+            if (targetIndex !== currentFrameIndex && targetIndex < TOTAL_FRAMES) {
+              renderFrame(targetIndex);
+            }
+          }
+        }, 0);
+
+        // 2. Fade out suave do texto e scrim nos primeiros 20% do scroll
+        masterTl.to(textLayer, {
+          opacity: 0,
+          y: -36,
+          filter: 'blur(8px)',
+          pointerEvents: 'none',
+          ease: 'power2.inOut',
+          duration: 0.20
+        }, 0);
+
+        masterTl.to(scrimOverlay, {
+          opacity: 0,
+          ease: 'power2.inOut',
+          duration: 0.20
+        }, 0);
+
+        if (floatBadges) {
+          masterTl.to(floatBadges, {
+            opacity: 0,
+            y: -18,
+            ease: 'power2.inOut',
+            duration: 0.18
+          }, 0);
+        }
+
+        if (bottomDock) {
+          masterTl.to(bottomDock, {
+            opacity: 0,
+            ease: 'power1.out',
+            duration: 0.12
+          }, 0);
+        }
+
+        masterTl.to(scrollCue, {
+          opacity: 0,
+          ease: 'power1.out',
+          duration: 0.10
+        }, 0);
+      }
+
+      // ================= ANIMAÇÕES BI-DIRECIONAIS DE BLUR IN / BLUR OUT (AURAL + APPLE GRADE) =================
+      function setupBlurScrollAnimations() {
+        var blurElements = document.querySelectorAll('[data-blur-scroll]');
+        if (!blurElements.length) return;
+
+        blurElements.forEach(function (el) {
+          // Estado inicial: desfocado e deslocado suavemente
+          gsap.set(el, {
+            opacity: 0,
+            filter: 'blur(14px)',
+            y: 35
+          });
+
+          ScrollTrigger.create({
+            trigger: el,
+            start: 'top 88%',
+            end: 'bottom 12%',
+            onEnter: function () {
+              // Entrando por baixo ao rolar para baixo: Blur In suave para nitidez
+              gsap.to(el, {
+                opacity: 1,
+                filter: 'blur(0px)',
+                y: 0,
+                duration: 0.85,
+                ease: 'power3.out',
+                overwrite: 'auto'
+              });
+            },
+            onLeave: function () {
+              // Saindo pelo topo ao continuar rolando para baixo: Blur Out suave para cima
+              gsap.to(el, {
+                opacity: 0,
+                filter: 'blur(14px)',
+                y: -35,
+                duration: 0.65,
+                ease: 'power2.in',
+                overwrite: 'auto'
+              });
+            },
+            onEnterBack: function () {
+              // Retornando pelo topo ao rolar para cima: Reaparece com Blur In suave para nitidez
+              gsap.to(el, {
+                opacity: 1,
+                filter: 'blur(0px)',
+                y: 0,
+                duration: 0.85,
+                ease: 'power3.out',
+                overwrite: 'auto'
+              });
+            },
+            onLeaveBack: function () {
+              // Saindo por baixo ao rolar para cima: Blur Out suave para baixo
+              gsap.to(el, {
+                opacity: 0,
+                filter: 'blur(14px)',
+                y: 35,
+                duration: 0.65,
+                ease: 'power2.in',
+                overwrite: 'auto'
+              });
+            }
+          });
+        });
+      }
+
+      // ================= TRACKING DE SPOTLIGHT INTERATIVO [data-spot] (AURAL SYSTEM - OTIMIZADO) =================
+      function setupSpotlightTracking() {
+        // Dispositivos touch (mobile) não possuem cursor hover — economiza ciclos de CPU e bateria
+        if (window.matchMedia && !window.matchMedia('(pointer: fine)').matches) return;
+
+        var spotCards = document.querySelectorAll('[data-spot]');
+        spotCards.forEach(function (card) {
+          var ticking = false;
+          card.addEventListener('mousemove', function (e) {
+            if (!ticking) {
+              window.requestAnimationFrame(function () {
+                var rect = card.getBoundingClientRect();
+                var x = e.clientX - rect.left;
+                var y = e.clientY - rect.top;
+                card.style.setProperty('--mx', x + 'px');
+                card.style.setProperty('--my', y + 'px');
+                ticking = false;
+              });
+              ticking = true;
+            }
+          }, { passive: true });
+        });
+      }
+
+      // ================= CONTROLADOR INTERATIVO DA SEÇÃO 03 (DIAGNÓSTICO GUIADO) =================
+      function setupDiagnosticConsole() {
+        var state = {
+          step: 1,
+          totalSteps: 4,
+          objetivo: 'imoveis',
+          credito: 'R$ 250k a 500k',
+          estrategia: 'curto',
+          parcela: 'R$ 2.000 a R$ 4.000',
+          nome: '',
+          whatsapp: ''
+        };
+
+        var tierData = {
+          imoveis: [
+            { val: 'R$ 100k a 250k', sub: 'Apartamentos & Terrenos' },
+            { val: 'R$ 250k a 500k', sub: 'Casas & Construção' },
+            { val: 'R$ 600k a 1.2M', sub: 'Médio & Alto Padrão' },
+            { val: 'Acima de R$ 1.2M', sub: 'Cotas Múltiplas / Imóveis de Luxo' }
+          ],
+          veiculos: [
+            { val: 'R$ 15k a 30k', sub: 'Motos & Mobilidade Ágil' },
+            { val: 'R$ 45k a 80k', sub: 'Populares & Seminovos' },
+            { val: 'R$ 80k a 120k', sub: 'SUVs & Sedans Médios' },
+            { val: 'R$ 120k a 180k', sub: 'Pick-ups & Veículos Premium' }
+          ],
+          pesados: [
+            { val: 'R$ 200k a 400k', sub: 'Vans & Caminhões Leves' },
+            { val: 'R$ 400k a 700k', sub: 'Carretas & Pesados (Plano 50%)' },
+            { val: 'R$ 700k a 1.5M', sub: 'Maquinário Agrícola & Frotas' },
+            { val: 'Acima de R$ 1.5M', sub: 'Projetos Especiais Corporativos' }
+          ],
+          patrimonio: [
+            { val: 'R$ 250k a 500k', sub: 'Alavancagem Inicial & Locação' },
+            { val: 'R$ 500k a 1M', sub: 'Multiplicação de Ativos Físicos' },
+            { val: 'R$ 1M a 2.5M', sub: 'Carteira de Renda Passiva' },
+            { val: 'Acima de R$ 2.5M', sub: 'Holding Familiar & Blindagem' }
+          ]
+        };
+
+        var budgetData = {
+          imoveis: ['Até R$ 2.000', 'R$ 2.000 a R$ 4.000', 'R$ 4.000 a R$ 7.000', 'Acima de R$ 7.000'],
+          veiculos: ['Até R$ 1.200', 'R$ 1.200 a R$ 2.200', 'R$ 2.200 a R$ 3.800', 'Acima de R$ 3.800'],
+          pesados: ['R$ 2.000 a R$ 4.000 (Plano 50%)', 'R$ 4.000 a R$ 7.000', 'R$ 7.000 a R$ 12.000', 'Acima de R$ 12.000'],
+          patrimonio: ['R$ 2.500 a R$ 5.000', 'R$ 5.000 a R$ 10.000', 'R$ 10.000 a R$ 20.000', 'Acima de R$ 20.000']
+        };
+
+        var stepMetaInfo = [
+          { counter: 'PASSO 01 DE 04', status: 'OBJETIVO PRINCIPAL', prompt: 'Qual é o plano principal que você deseja colocar em prática?', desc: 'Selecione uma das frentes para direcionarmos as melhores tabelas conveniadas.' },
+          { counter: 'PASSO 02 DE 04', status: 'VOLUME DE CRÉDITO', prompt: 'Qual valor aproximado de crédito você precisa?', desc: 'As faixas abaixo correspondem às cotas vigentes com as menores taxas do mercado.' },
+          { counter: 'PASSO 03 DE 04', status: 'ESTRATÉGIA & PRAZO', prompt: 'Qual é a sua expectativa de prazo e forma de conquista?', desc: 'Escolha a estratégia que melhor equilibra velocidade de contemplação e valor da parcela.' },
+          { counter: 'PASSO 04 DE 04', status: 'ESTUDO DE VIABILIDADE', prompt: 'Para onde podemos enviar seu estudo comparativo oficial?', desc: 'Preencha seus dados para receber a análise personalizada diretamente com nossa assessoria.' }
+        ];
+
+        // Elementos DOM
+        var stepIndicator = document.getElementById('diag-step-indicator');
+        var stepStatus = document.getElementById('diag-step-status');
+        var stepPrompt = document.getElementById('diag-step-prompt');
+        var stepDesc = document.getElementById('diag-step-desc');
+        var progressFill = document.getElementById('diag-progress-fill');
+        var btnPrev = document.getElementById('btn-diag-prev');
+        var btnNext = document.getElementById('btn-diag-next');
+        var btnText = document.getElementById('diag-btn-text');
+        var btnTextClone = document.getElementById('diag-btn-text-clone');
+        var tierContainer = document.getElementById('diag-tier-container');
+        var budgetContainer = document.getElementById('diag-budget-container');
+        var inputNome = document.getElementById('diag-input-nome');
+        var inputWhatsapp = document.getElementById('diag-input-whatsapp');
+        var navRow = document.getElementById('diag-nav-row');
+        var successPanel = document.getElementById('diag-success-panel');
+        var successWhatsappBtn = document.getElementById('diag-success-whatsapp-btn');
+
+        // Elementos HUD
+        var hudObjetivo = document.getElementById('hud-val-objetivo');
+        var hudCredito = document.getElementById('hud-val-credito');
+        var hudEstrategia = document.getElementById('hud-val-estrategia');
+        var hudLance = document.getElementById('hud-val-lance');
+        var hudIndexador = document.getElementById('hud-val-indexador');
+        var hudParceiras = document.getElementById('hud-val-parceiras');
+
+        if (!stepIndicator || !btnNext) return;
+
+        // Renderiza Tiers de Crédito do Passo 2
+        function renderTiers() {
+          var list = tierData[state.objetivo] || tierData.imoveis;
+          tierContainer.innerHTML = '';
+          list.forEach(function (item, idx) {
+            var btn = document.createElement('div');
+            btn.className = 'diag-tier-btn' + (idx === 1 ? ' selected' : '');
+            btn.setAttribute('data-val', item.val);
+            btn.innerHTML = '<span class="tier-val">' + item.val + '</span><span class="tier-sub">' + item.sub + '</span>';
+            btn.addEventListener('click', function () {
+              var all = tierContainer.querySelectorAll('.diag-tier-btn');
+              all.forEach(function (b) { b.classList.remove('selected'); });
+              btn.classList.add('selected');
+              state.credito = item.val;
+              updateHud();
+            });
+            tierContainer.appendChild(btn);
+          });
+          state.credito = list[1].val;
+        }
+
+        // Renderiza Faixas de Parcela do Passo 4
+        function renderBudgets() {
+          var list = budgetData[state.objetivo] || budgetData.imoveis;
+          budgetContainer.innerHTML = '';
+          list.forEach(function (item, idx) {
+            var pill = document.createElement('div');
+            pill.className = 'diag-budget-pill' + (idx === 1 ? ' selected' : '');
+            pill.setAttribute('data-val', item);
+            pill.textContent = item + ' / mês';
+            pill.addEventListener('click', function () {
+              var all = budgetContainer.querySelectorAll('.diag-budget-pill');
+              all.forEach(function (p) { p.classList.remove('selected'); });
+              pill.classList.add('selected');
+              state.parcela = item;
+            });
+            budgetContainer.appendChild(pill);
+          });
+          state.parcela = list[1];
+        }
+
+        // Atualização do HUD Lateral em Tempo Real
+        function updateHud() {
+          var objNames = {
+            imoveis: 'Imóveis & Construção',
+            veiculos: 'Automóveis & Motos',
+            pesados: 'Pesados & Maquinário',
+            patrimonio: 'Alavancagem Patrimonial'
+          };
+          var stratNames = {
+            curto: 'Aceleração / Curto Prazo (50 a 80m)',
+            medio: 'Equilíbrio / Lance Fixo (90 a 165m)',
+            longo: 'Disciplina / Longo Prazo (até 240m)'
+          };
+
+          if (hudObjetivo) hudObjetivo.textContent = objNames[state.objetivo] || 'Imóveis & Construção';
+          if (hudCredito) hudCredito.textContent = state.credito;
+          if (hudEstrategia) hudEstrategia.textContent = stratNames[state.estrategia] || 'Aceleração / Curto Prazo';
+
+          if (hudLance) {
+            if (state.objetivo === 'imoveis') {
+              hudLance.textContent = 'Até 30% da Própria Carta';
+            } else if (state.objetivo === 'pesados') {
+              hudLance.textContent = '25% Embutido + Plano 50%';
+            } else {
+              hudLance.textContent = 'Até 25% da Própria Carta';
+            }
+          }
+
+          if (hudIndexador) {
+            if (state.objetivo === 'imoveis') {
+              hudIndexador.textContent = 'INCC (Construção Civil)';
+            } else {
+              hudIndexador.textContent = 'IPCA (Inflação Oficial)';
+            }
+          }
+
+          if (hudParceiras) {
+            hudParceiras.textContent = 'Embracon · CNVW';
+          }
+        }
+
+        // Formatação Automática de WhatsApp com Máscara
+        if (inputWhatsapp) {
+          inputWhatsapp.addEventListener('input', function (e) {
+            var v = e.target.value.replace(/\D/g, '');
+            if (v.length > 11) v = v.substring(0, 11);
+            if (v.length > 10) {
+              e.target.value = '(' + v.substring(0, 2) + ') ' + v.substring(2, 7) + '-' + v.substring(7);
+            } else if (v.length > 6) {
+              e.target.value = '(' + v.substring(0, 2) + ') ' + v.substring(2, 6) + '-' + v.substring(6);
+            } else if (v.length > 2) {
+              e.target.value = '(' + v.substring(0, 2) + ') ' + v.substring(2);
+            } else if (v.length > 0) {
+              e.target.value = '(' + v;
+            }
+          });
+        }
+
+        // Helper para obter texto responsivo do botão conforme resolução
+        function getNextBtnLabel(step) {
+          var isMobile = window.innerWidth <= 640;
+          if (step === 4) {
+            return isMobile ? 'Receber Estudo no WhatsApp' : 'Receber Estudo de Viabilidade no WhatsApp';
+          }
+          return isMobile ? 'Continuar (Passo ' + (step + 1) + ')' : 'Continuar para Passo ' + (step + 1);
+        }
+
+        // Troca de Passo com Animação Fluida
+        function goToStep(newStep) {
+          if (newStep < 1 || newStep > 4) return;
+          state.step = newStep;
+
+          // Esconde todos os painéis
+          for (var i = 1; i <= 4; i++) {
+            var panel = document.getElementById('step-panel-' + i);
+            if (panel) {
+              panel.classList.remove('active');
+            }
+          }
+
+          // Ativa o painel do passo atual
+          var activePanel = document.getElementById('step-panel-' + state.step);
+          if (activePanel) {
+            activePanel.classList.add('active');
+          }
+
+          // Atualiza informações de cabeçalho
+          var info = stepMetaInfo[state.step - 1];
+          if (stepIndicator) stepIndicator.textContent = info.counter;
+          if (stepStatus) stepStatus.textContent = info.status;
+          if (stepPrompt) stepPrompt.textContent = info.prompt;
+          if (stepDesc) stepDesc.textContent = info.desc;
+
+          // Atualiza progresso da barra
+          var pct = (state.step / 4) * 100;
+          if (progressFill) progressFill.style.width = pct + '%';
+
+          // Botão Voltar visibilidade
+          if (btnPrev) {
+            btnPrev.style.visibility = state.step === 1 ? 'hidden' : 'visible';
+          }
+
+          // Texto do Botão Avançar
+          if (btnText && btnTextClone) {
+            var label = getNextBtnLabel(state.step);
+            btnText.textContent = label;
+            btnTextClone.textContent = label;
+          }
+
+          // Se for passo 2, garante que os tiers estão renderizados para o objetivo atual
+          if (state.step === 2) {
+            renderTiers();
+          }
+
+          // Se for passo 4, garante que os orçamentos estão sincronizados
+          if (state.step === 4) {
+            renderBudgets();
+          }
+
+          updateHud();
+        }
+
+        // Listeners do Passo 1 (Cards de Objetivo)
+        var objCards = document.querySelectorAll('.diag-choice-card[data-target="step-1"]');
+        objCards.forEach(function (card) {
+          card.addEventListener('click', function () {
+            objCards.forEach(function (c) { c.classList.remove('selected'); });
+            card.classList.add('selected');
+            state.objetivo = card.getAttribute('data-value');
+            renderTiers();
+            renderBudgets();
+            updateHud();
+          });
+        });
+
+        // Listeners do Passo 3 (Estratégias)
+        var stratCards = document.querySelectorAll('.diag-strategy-card[data-target="step-3"]');
+        stratCards.forEach(function (card) {
+          card.addEventListener('click', function () {
+            stratCards.forEach(function (c) { c.classList.remove('selected'); });
+            card.classList.add('selected');
+            state.estrategia = card.getAttribute('data-value');
+            updateHud();
+          });
+        });
+
+        // Clique no Botão Voltar
+        if (btnPrev) {
+          btnPrev.addEventListener('click', function () {
+            goToStep(state.step - 1);
+          });
+        }
+
+        // Clique no Botão Avançar / Enviar
+        if (btnNext) {
+          btnNext.addEventListener('click', function () {
+            if (state.step < 4) {
+              goToStep(state.step + 1);
+            } else {
+              // Validação do Passo 4
+              var nome = (inputNome ? inputNome.value.trim() : '');
+              var wpp = (inputWhatsapp ? inputWhatsapp.value.trim() : '');
+
+              if (!nome) {
+                if (inputNome) {
+                  inputNome.focus();
+                  inputNome.style.boxShadow = 'inset 0 0 0 1px #F87171, 0 0 0 3px rgba(248, 113, 113, 0.25)';
+                  setTimeout(function () { inputNome.style.boxShadow = ''; }, 2500);
+                }
+                return;
+              }
+
+              if (!wpp || wpp.replace(/\D/g, '').length < 10) {
+                if (inputWhatsapp) {
+                  inputWhatsapp.focus();
+                  inputWhatsapp.style.boxShadow = 'inset 0 0 0 1px #F87171, 0 0 0 3px rgba(248, 113, 113, 0.25)';
+                  setTimeout(function () { inputWhatsapp.style.boxShadow = ''; }, 2500);
+                }
+                return;
+              }
+
+              state.nome = nome;
+              state.whatsapp = wpp;
+
+              // Monta a mensagem personalizada do WhatsApp
+              var objNames = {
+                imoveis: 'Imóveis & Construção',
+                veiculos: 'Automóveis & Motos',
+                pesados: 'Pesados & Maquinário',
+                patrimonio: 'Alavancagem Patrimonial'
+              };
+              var stratNames = {
+                curto: 'Aceleração / Curto Prazo (50 a 80m)',
+                medio: 'Equilíbrio / Lance Fixo (90 a 165m)',
+                longo: 'Disciplina / Longo Prazo (até 240m)'
+              };
+
+              var msg = 'Olá, Rafael! Fiz o diagnóstico guiado no site da Lifecon e gostaria de receber meu estudo de viabilidade:\n\n' +
+                '• Nome: ' + state.nome + '\n' +
+                '• Objetivo: ' + (objNames[state.objetivo] || state.objetivo) + '\n' +
+                '• Faixa de Crédito: ' + state.credito + '\n' +
+                '• Estratégia de Contemplação: ' + (stratNames[state.estrategia] || state.estrategia) + '\n' +
+                '• Parcela Confortável: ' + state.parcela + '\n' +
+                '• WhatsApp: ' + state.whatsapp + '\n\n' +
+                'Aguardo o comparativo das administradoras homologadas. Obrigado!';
+
+              var waUrl = 'https://wa.me/5521972838954?text=' + encodeURIComponent(msg);
+
+              // Transição para Tela de Sucesso
+              for (var k = 1; k <= 4; k++) {
+                var p = document.getElementById('step-panel-' + k);
+                if (p) p.style.display = 'none';
+              }
+              if (navRow) navRow.style.display = 'none';
+              if (stepIndicator) stepIndicator.textContent = 'CONCLUÍDO';
+              if (stepStatus) stepStatus.textContent = 'ESTUDO GERADO COM SUCESSO';
+              if (stepPrompt) stepPrompt.textContent = 'Seu planejamento foi traçado com sucesso!';
+              if (stepDesc) stepDesc.textContent = 'Clique abaixo para abrir sua conversa direta com nossa equipe no WhatsApp.';
+              if (progressFill) progressFill.style.width = '100%';
+
+              if (successPanel) {
+                successPanel.classList.add('active');
+              }
+              if (successWhatsappBtn) {
+                successWhatsappBtn.href = waUrl;
+              }
+
+              // Abre WhatsApp
+              window.open(waUrl, '_blank');
+            }
+          });
+        }
+
+        // Inicialização dos Tiers e HUD
+        renderTiers();
+        renderBudgets();
+        updateHud();
+
+        if (btnText && btnTextClone) {
+          var initialLabel = getNextBtnLabel(state.step);
+          btnText.textContent = initialLabel;
+          btnTextClone.textContent = initialLabel;
+        }
+
+        window.addEventListener('resize', function () {
+          if (btnText && btnTextClone) {
+            var label = getNextBtnLabel(state.step);
+            btnText.textContent = label;
+            btnTextClone.textContent = label;
+          }
+        });
+      }
+
+      // ================= GERENCIAMENTO DO FAQ / CENTRAL DE CLAREZA =================
+      function setupFaqAccordion() {
+        var faqItems = document.querySelectorAll('.faq-item');
+        var filterBtns = document.querySelectorAll('.faq-filter-btn');
+
+        // 1. Toggling dos Accordions com Acessibilidade e Transição Suave
+        faqItems.forEach(function (item) {
+          var trigger = item.querySelector('.faq-trigger');
+          if (!trigger) return;
+
+          trigger.addEventListener('click', function () {
+            var isActive = item.classList.contains('active');
+            
+            // Fecha os outros para manter a tela limpa e focada (estilo Apple/Aural)
+            faqItems.forEach(function (other) {
+              if (other !== item) {
+                other.classList.remove('active');
+                var otherTrigger = other.querySelector('.faq-trigger');
+                if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
+              }
+            });
+
+            if (isActive) {
+              item.classList.remove('active');
+              trigger.setAttribute('aria-expanded', 'false');
+            } else {
+              item.classList.add('active');
+              trigger.setAttribute('aria-expanded', 'true');
+            }
+
+            // Atualiza posições de ScrollTrigger do GSAP
+            if (typeof ScrollTrigger !== 'undefined') {
+              ScrollTrigger.refresh();
+            }
+          });
+        });
+
+        // 2. Filtro por Categoria (Todas, Lances, Custos, Segurança)
+        filterBtns.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var cat = btn.getAttribute('data-filter');
+
+            filterBtns.forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+
+            faqItems.forEach(function (item) {
+              var itemCat = item.getAttribute('data-cat');
+              if (cat === 'all' || itemCat === cat) {
+                item.style.display = 'block';
+                // Efeito suave de entrada
+                if (typeof gsap !== 'undefined') {
+                  gsap.fromTo(item, { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.35, ease: 'power2.out' });
+                }
+              } else {
+                item.style.display = 'none';
+              }
+            });
+
+            if (typeof ScrollTrigger !== 'undefined') {
+              ScrollTrigger.refresh();
+            }
+          });
+        });
+      }
+
+      // Inicialização Robusta
+      window.addEventListener('DOMContentLoaded', function () {
+        preloadFrames();
+        resizeCanvas();
+        playEntranceAnimation();
+        setupScrollytelling();
+        setupBlurScrollAnimations();
+        setupSpotlightTracking();
+        setupDiagnosticConsole();
+        setupFaqAccordion();
+
+        // Redimensionamento Inteligente (ignora retração/expansão da barra de navegação no mobile)
+        var lastWidth = window.innerWidth;
+        window.addEventListener('resize', function () {
+          if (Math.abs(window.innerWidth - lastWidth) > 60) {
+            var newIsMobile = window.innerWidth < 992;
+            if (newIsMobile !== isMobile) {
+              isMobile = newIsMobile;
+              framesPath = isMobile ? '/assets/frames-mobile/' : '/assets/frames-desktop/';
+              preloadFrames();
+            }
+            lastWidth = window.innerWidth;
+            resizeCanvas();
+            ScrollTrigger.refresh();
+          }
+        });
+      });
+
+    })();
+  </script>
+
+  <!-- ================= BOTÃO FLUTUANTE DE WHATSAPP OFICIAL (+55 21 97283-8954) ================= -->
+  <FloatingWhatsApp />
 </Layout>

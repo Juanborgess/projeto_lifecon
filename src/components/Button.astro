@@ -1,0 +1,69 @@
+---
+// Button.astro - Componente Botão Master do Design System Lifecon
+interface Props {
+  href?: string;
+  type?: "button" | "submit" | "reset";
+  target?: string;
+  rel?: string;
+  variant?: "primary" | "ghost";
+  size?: "md" | "sm";
+  icon?: string;
+  text?: string;
+  id?: string;
+  class?: string;
+  labelId?: string;
+  labelCloneId?: string;
+  [key: string]: any;
+}
+
+const {
+  href,
+  type = href ? undefined : "button",
+  target,
+  rel = target === "_blank" ? "noopener noreferrer" : undefined,
+  variant = "primary",
+  size = "md",
+  icon = "→",
+  text,
+  id,
+  class: className = "",
+  labelId,
+  labelCloneId,
+  ...rest
+} = Astro.props;
+
+const classes = [
+  "btn",
+  variant === "ghost" && "btn-ghost",
+  size === "sm" && "btn-sm",
+  className
+].filter(Boolean).join(" ");
+---
+
+{href ? (
+  <a href={href} target={target} rel={rel} class={classes} id={id} {...rest}>
+    <span class="btn-label">
+      <span id={labelId}>{text}<slot /></span>
+      <span id={labelCloneId}>{text}<slot /></span>
+    </span>
+    {icon && (
+      <span class="btn-icon">
+        <span>{icon}</span>
+        <span>{icon}</span>
+      </span>
+    )}
+  </a>
+) : (
+  <button type={type} class={classes} id={id} {...rest}>
+    <span class="btn-label">
+      <span id={labelId}>{text}<slot /></span>
+      <span id={labelCloneId}>{text}<slot /></span>
+    </span>
+    {icon && (
+      <span class="btn-icon">
+        <span>{icon}</span>
+        <span>{icon}</span>
+      </span>
+    )}
+  </button>
+)}

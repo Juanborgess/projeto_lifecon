@@ -1,0 +1,27 @@
+---
+// Header.astro - Cabeçalho / Navbar Superior Lifecon
+import Button from './Button.astro';
+---
+
+<header id="hd">
+  <a href="#hero-scroll-wrapper" class="hd-brand" aria-label="Lifecon - Início">
+    <img src="/assets/logo-lifecon.jpeg" alt="Símbolo Lifecon" class="hd-brand-icon">
+    <span class="hd-brand-text">
+      <span class="brand-life">Life</span><span class="brand-con">con</span>
+    </span>
+  </a>
+
+  <nav class="hd-nav gb" aria-label="Navegação Principal">
+    <a href="#imoveis">Imóveis</a>
+    <a href="#veiculos">Veículos</a>
+    <a href="#patrimonio">Patrimônio</a>
+    <a href="#como-funciona">Como Funciona</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#faq">Dúvidas</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="hd-actions">
+    <Button href="#diagnostico" size="sm" id="nav-cta-btn" text="Simule seu Plano" />
+  </div>
+</header>

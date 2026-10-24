@@ -1,0 +1,58 @@
+---
+// SolutionCard.astro - Card de Solução Estratégica Lifecon
+interface Props {
+  id: string;
+  badgeNum: string;
+  badgeTag: string;
+  title: string;
+  description: string;
+  calloutLabel: string;
+  calloutText: string;
+  specs: string[];
+  actionText: string;
+  actionHref?: string;
+}
+
+const {
+  id,
+  badgeNum,
+  badgeTag,
+  title,
+  description,
+  calloutLabel,
+  calloutText,
+  specs = [],
+  actionText,
+  actionHref = "#diagnostico",
+} = Astro.props;
+---
+
+<article class="solution-card gb" id={id} data-spot data-blur-scroll>
+  <div class="card-meta-top">
+    <span class="card-badge-num">{badgeNum}</span>
+    <span class="card-badge-tag">{badgeTag}</span>
+  </div>
+
+  <div class="card-emblem">
+    <slot name="icon" />
+  </div>
+
+  <h3 class="card-title">{title}</h3>
+  <p class="card-desc">{description}</p>
+
+  <div class="card-callout-box">
+    <span class="callout-label">{calloutLabel}</span>
+    <p class="callout-text">{calloutText}</p>
+  </div>
+
+  <div class="card-specs-row">
+    {specs.map((spec) => (
+      <span class="spec-pill">{spec}</span>
+    ))}
+  </div>
+
+  <a href={actionHref} class="card-action-link">
+    <span>{actionText}</span>
+    <span class="arrow">→</span>
+  </a>
+</article>

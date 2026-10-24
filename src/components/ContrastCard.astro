@@ -1,0 +1,58 @@
+---
+// ContrastCard.astro - Card Comparativo de Contraste Financeiro
+interface ListItem {
+  strong: string;
+  text: string;
+}
+
+interface Props {
+  variant: "danger" | "positive";
+  badgeText: string;
+  title: string;
+  punch: string;
+  items?: ListItem[];
+  metricCaption: string;
+  metricVal: string;
+}
+
+const {
+  variant,
+  badgeText,
+  title,
+  punch,
+  items = [],
+  metricCaption,
+  metricVal,
+} = Astro.props;
+
+const cardClass = variant === "danger" ? "contrast-card danger-card gb" : "contrast-card positive-card gb";
+const icon = variant === "danger" ? "✕" : "✓";
+---
+
+<div class={cardClass} data-spot data-blur-scroll>
+  <div>
+    <div class="contrast-badge-pill">
+      <span>{badgeText}</span>
+    </div>
+    <h4 class="contrast-card-title">{title}</h4>
+    <p class="contrast-card-punch">{punch}</p>
+
+    <ul class="contrast-list">
+      {items.length > 0 ? (
+        items.map((item) => (
+          <li class="contrast-item">
+            <span class="contrast-icon">{icon}</span>
+            <span><strong>{item.strong}:</strong> {item.text}</span>
+          </li>
+        ))
+      ) : (
+        <slot />
+      )}
+    </ul>
+  </div>
+
+  <div class="contrast-footer-metric">
+    <span class="metric-caption">{metricCaption}</span>
+    <span class="metric-val">{metricVal}</span>
+  </div>
+</div>
