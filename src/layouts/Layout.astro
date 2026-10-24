@@ -1,7 +1,6 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { ClientRouter } from 'astro:transitions';
 
 interface Props {
   title?: string;
@@ -22,7 +21,6 @@ const {
   <title>{title}</title>
   <meta name="description" content={description}>
 
-  <ClientRouter />
 
   <!-- ================= FAVICON & THEME ================= -->
   <meta name="theme-color" content="#001536">
