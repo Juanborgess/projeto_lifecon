@@ -1,0 +1,125 @@
+---
+import Button from './Button.astro';
+---
+
+<!-- ================= HERO SECTION FULL-SCREEN COM APPLE-GRADE SCROLLYTELLING ================= -->
+  <section id="hero-scroll-wrapper">
+    <div class="hero-pinned-stage" id="hero-pin-target">
+      
+      <!-- Canvas de Alta Performance Apple-Grade (120 WebP Frames GPU Accelerated) -->
+      <div class="hero-video-fullscreen">
+        <canvas id="hero-canvas"></canvas>
+      </div>
+
+      <!-- Orbit Background Geometry (Padrão DRIFT & OTTO) -->
+      <div class="hero-orbit-stage" aria-hidden="true">
+        <svg class="hero-orbit-svg" viewBox="0 0 500 500" fill="none">
+          <circle cx="250" cy="250" r="230" stroke="rgba(9, 175, 198, 0.12)" stroke-width="1" stroke-dasharray="4 6" />
+          <circle cx="250" cy="250" r="170" stroke="rgba(202, 157, 99, 0.15)" stroke-width="1" />
+          <circle cx="250" cy="250" r="110" stroke="rgba(9, 175, 198, 0.20)" stroke-width="1" stroke-dasharray="2 4" />
+          <line x1="250" y1="10" x2="250" y2="490" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" stroke-dasharray="2 8" />
+          <line x1="10" y1="250" x2="490" y2="250" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" stroke-dasharray="2 8" />
+          <circle cx="250" cy="20" r="3" fill="#09AFC6" />
+          <circle cx="420" cy="250" r="3" fill="#CA9D63" />
+        </svg>
+      </div>
+
+      <!-- Scrim Gradiente Dinâmico (Fade out no scroll junto com o texto) -->
+      <div class="hero-scrim-overlay" id="hero-scrim"></div>
+
+      <!-- Floating Contextual Cards (Padrão OTTO - preenche o espaço com prova de alto valor) -->
+      <div class="hero-float-badges" id="hero-float-badges">
+        <div class="hero-float-card float-card-left">
+          <span class="float-card-dot"></span>
+          <div class="float-card-body">
+            <span class="float-card-label">Administradoras Oficiais</span>
+            <span class="float-card-val">Embracon · CNVW</span>
+          </div>
+        </div>
+        <div class="hero-float-card float-card-right">
+          <span class="float-card-dot gold-dot"></span>
+          <div class="float-card-body">
+            <span class="float-card-label">Alavancagem Inteligente</span>
+            <span class="float-card-val">Lance Embutido até 30%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Camada de Texto & Copywriting (Some suavemente nos primeiros 20% do scroll) -->
+      <div class="hero-text-layer" id="hero-text-layer">
+        <div class="hero-content">
+          
+          <!-- Eyebrow Badge -->
+          <div class="hero-badge hero-anim-elem">
+            <span class="hero-badge-dot"></span>
+            <span>Assessoria Patrimonial & Consórcios</span>
+          </div>
+
+          <!-- Headline H1 com Destaque Dourado -->
+          <h1 class="hero-title hero-anim-elem">
+            <span class="hero-title-main">Antes de vender um plano,</span>
+            <span class="hero-title-accent"><em>queremos entender o seu.</em></span>
+          </h1>
+
+          <!-- Subtítulo de Autoridade -->
+          <p class="hero-subtitle hero-anim-elem">
+            A estratégia inteligente para conquistar imóveis, veículos e patrimônio sólido com transparência absoluta e assessoria do início ao fim.
+          </p>
+
+          <!-- Ação Primária & Secundária (Desktop side-by-side / Mobile focado) -->
+          <div class="hero-actions hero-anim-elem">
+            <Button
+              href="#diagnostico"
+              class="hero-btn-primary"
+              id="hero-primary-cta"
+              text="Traçar Meu Planejamento"
+            />
+            
+            <Button
+              href="#como-funciona"
+              variant="ghost"
+              class="hero-btn-secondary"
+              id="hero-secondary-cta"
+              text="Como Funciona"
+              icon="↓"
+            />
+          </div>
+
+          <!-- Faixa de Confiança & Transparência Ética (100% Genuíno e Sem Mentiras) -->
+          <div class="hero-trust-strip hero-anim-elem">
+            <span class="trust-shield-icon">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#CA9D63" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </span>
+            <span class="trust-primary">Transparência Absoluta</span>
+            <span class="trust-sep">·</span>
+            <span class="trust-secondary">Taxas a partir de 12% total · 0% juros bancários</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Floating Pill de Scroll Desktop -->
+      <a href="#como-funciona" class="hero-scroll-pill" id="hero-scroll-cue">
+        <span class="scroll-pill-dot"></span>
+        <span class="scroll-pill-text">Role para Explorar</span>
+        <span class="scroll-pill-arrow">↓</span>
+      </a>
+
+      <!-- Bottom Horizon Dock Mobile (Padrão DRIFT & OTTO) -->
+      <div class="hero-bottom-dock" id="hero-bottom-dock">
+        <div class="dock-meta-left">
+          <span class="dock-tag">LIFECON</span>
+          <span class="dock-sep">/</span>
+          <span class="dock-step-active">01 DIAGNÓSTICO</span>
+        </div>
+        <a href="#como-funciona" class="dock-scroll-cue">
+          <span class="dock-cue-text">Role para Explorar</span>
+          <span class="dock-cue-arrow">↓</span>
+        </a>
+      </div>
+
+    </div>
+  </section>

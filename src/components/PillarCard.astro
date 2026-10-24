@@ -1,0 +1,31 @@
+---
+// PillarCard.astro - Card de Pilar Inegociável da Lifecon
+interface Props {
+  num: string;
+  glow?: "gold" | "cyan";
+  tag: string;
+  title: string;
+  description: string;
+}
+
+const {
+  num,
+  glow = "gold",
+  tag,
+  title,
+  description,
+} = Astro.props;
+
+const glowClass = glow === "cyan" ? "pillar-num cyan-glow" : "pillar-num gold-glow";
+---
+
+<div class="pillar-card gb" data-spot>
+  <div class="pillar-top">
+    <span class={glowClass}>{num}</span>
+    <div class="pillar-tag">{tag}</div>
+  </div>
+  <h5 class="pillar-card-title">{title}</h5>
+  <p class="pillar-card-desc">
+    {description}
+  </p>
+</div>

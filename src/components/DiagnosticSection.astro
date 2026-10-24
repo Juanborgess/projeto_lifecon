@@ -1,0 +1,291 @@
+---
+import Button from './Button.astro';
+---
+
+<!-- ================= SEÇÃO 03: O DIAGNÓSTICO GUIADO LIFECON (A MÁQUINA DE LEADS) ================= -->
+  <section class="sec-diagnostic" id="diagnostico">
+    <div class="diag-container">
+
+      <!-- Header Editorial da Seção -->
+      <header class="diag-header" data-blur-scroll>
+        <div class="diag-kicker">
+          <span class="diag-kicker-dot"></span>
+          <span>03 · CONSULTORIA DE VIABILIDADE</span>
+        </div>
+        <h2 class="diag-title">
+          Descubra qual planejamento financeiro<br>
+          <em>faz sentido para você.</em>
+        </h2>
+        <p class="diag-subtitle">
+          Responda a 4 perguntas simples e receba um estudo preliminar de viabilidade diretamente com nossa equipe especializada, sem nenhum compromisso e com números 100% transparentes.
+        </p>
+      </header>
+
+      <!-- Console Interativo (Grid Duplo: Formulário Guiado + HUD ao Vivo) -->
+      <div class="diag-console">
+
+        <!-- LADO ESQUERDO: Cartão Principal com Passos -->
+        <div class="diag-main-card gb" data-spot data-blur-scroll id="diag-main-box">
+
+          <!-- Barra de Progresso e Cabeçalho do Passo -->
+          <div class="diag-step-header">
+            <div class="diag-step-meta">
+              <span class="diag-step-counter" id="diag-step-indicator">PASSO 01 DE 04</span>
+              <span class="diag-step-pill-indicator" id="diag-step-status">OBJETIVO PRINCIPAL</span>
+            </div>
+            <div class="diag-progress-track">
+              <div class="diag-progress-fill" id="diag-progress-fill" style="width: 25%;"></div>
+            </div>
+            <h3 class="diag-step-prompt" id="diag-step-prompt">Qual é o plano principal que você deseja colocar em prática?</h3>
+            <p class="diag-step-desc" id="diag-step-desc">Selecione uma das frentes para direcionarmos as melhores tabelas conveniadas.</p>
+          </div>
+
+          <!-- ================= PASSO 1: OBJETIVO ================= -->
+          <div class="diag-step-panel active" id="step-panel-1">
+            <div class="diag-choice-grid">
+              
+              <div class="diag-choice-card selected" data-value="imoveis" data-target="step-1">
+                <div class="diag-choice-top">
+                  <div class="diag-choice-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                      <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
+                  </div>
+                  <span class="diag-choice-check">✓</span>
+                </div>
+                <div>
+                  <h4 class="diag-choice-title">Imóveis & Construção</h4>
+                  <span class="diag-choice-tag">SFH · Aquisição · Construção · Terrenos</span>
+                </div>
+              </div>
+
+              <div class="diag-choice-card" data-value="veiculos" data-target="step-1">
+                <div class="diag-choice-top">
+                  <div class="diag-choice-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C2.1 10.9 2 11.2 2 11.5V16c0 .6.4 1 1 1h2"/>
+                      <circle cx="7" cy="17" r="2"/>
+                      <path d="M9 17h6"/>
+                      <circle cx="17" cy="17" r="2"/>
+                    </svg>
+                  </div>
+                  <span class="diag-choice-check">✓</span>
+                </div>
+                <div>
+                  <h4 class="diag-choice-title">Automóveis & Motos</h4>
+                  <span class="diag-choice-tag">Zero Km · Seminovos · Utilitários</span>
+                </div>
+              </div>
+
+              <div class="diag-choice-card" data-value="pesados" data-target="step-1">
+                <div class="diag-choice-top">
+                  <div class="diag-choice-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="1" y="3" width="15" height="13"/>
+                      <polygon points="16 8 20 8 23 11 23 16 16 16 8"/>
+                      <circle cx="5.5" cy="18.5" r="2.5"/>
+                      <circle cx="18.5" cy="18.5" r="2.5"/>
+                    </svg>
+                  </div>
+                  <span class="diag-choice-check">✓</span>
+                </div>
+                <div>
+                  <h4 class="diag-choice-title">Pesados & Maquinário</h4>
+                  <span class="diag-choice-tag">Caminhões · Agrícola · Plano 50%</span>
+                </div>
+              </div>
+
+              <div class="diag-choice-card" data-value="patrimonio" data-target="step-1">
+                <div class="diag-choice-top">
+                  <div class="diag-choice-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="12" y1="2" x2="12" y2="22"/>
+                      <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
+                  </div>
+                  <span class="diag-choice-check">✓</span>
+                </div>
+                <div>
+                  <h4 class="diag-choice-title">Alavancagem Patrimonial</h4>
+                  <span class="diag-choice-tag">Construção de Renda · Locação</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ================= PASSO 2: VOLUME DE CRÉDITO ================= -->
+          <div class="diag-step-panel" id="step-panel-2">
+            <div class="diag-tier-grid" id="diag-tier-container">
+              <!-- Renderizado dinamicamente via JavaScript conforme o objetivo -->
+            </div>
+          </div>
+
+          <!-- ================= PASSO 3: HORIZONTE & ESTRATÉGIA ================= -->
+          <div class="diag-step-panel" id="step-panel-3">
+            <div class="diag-strategy-list">
+              
+              <div class="diag-strategy-card selected" data-value="curto" data-target="step-3">
+                <div class="strat-badge-icon">⚡</div>
+                <div class="strat-content">
+                  <span class="strat-title">Aceleração / Curto Prazo (50 a 80 meses)</span>
+                  <span class="strat-desc">Estratégia de contemplação planejada utilizando Lance Livre ou Lance Embutido de até 30% da própria carta para antecipar a conquista sem tirar recursos do bolso.</span>
+                </div>
+              </div>
+
+              <div class="diag-strategy-card" data-value="medio" data-target="step-3">
+                <div class="strat-badge-icon">⚖️</div>
+                <div class="strat-content">
+                  <span class="strat-title">Equilíbrio / Médio Prazo (90 a 165 meses)</span>
+                  <span class="strat-desc">Oferta de Lance Fixo pré-determinado (25% a 50%) para concorrer em igualdade pela Loteria Federal, sem disputar com grandes lances.</span>
+                </div>
+              </div>
+
+              <div class="diag-strategy-card" data-value="longo" data-target="step-3">
+                <div class="strat-badge-icon">🛡️</div>
+                <div class="strat-content">
+                  <span class="strat-title">Disciplina / Longo Prazo (180 a 240 meses)</span>
+                  <span class="strat-desc">Parcelas reduzidas no Plano Estendido de até 20 anos (menores que o aluguel) ou modalidade Plano 50% para pesados.</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ================= PASSO 4: ORÇAMENTO & CAPTURA ================= -->
+          <div class="diag-step-panel" id="step-panel-4">
+            
+            <p style="font-size: 13.5px; color: var(--ink-2); margin-bottom: 12px; font-weight: 500;">
+              Qual faixa de parcela mensal é confortável para o seu orçamento?
+            </p>
+            <div class="diag-budget-row" id="diag-budget-container">
+              <div class="diag-budget-pill selected" data-value="Abaixo de R$ 2.000">Até R$ 2.000 / mês</div>
+              <div class="diag-budget-pill" data-value="R$ 2.000 a R$ 4.000">R$ 2.000 a R$ 4.000 / mês</div>
+              <div class="diag-budget-pill" data-value="R$ 4.000 a R$ 7.000">R$ 4.000 a R$ 7.000 / mês</div>
+              <div class="diag-budget-pill" data-value="Acima de R$ 7.000">Acima de R$ 7.000 / mês</div>
+            </div>
+
+            <p style="font-size: 13.5px; color: var(--ink-2); margin-bottom: 12px; font-weight: 500;">
+              Onde deseja receber a simulação oficial das administradoras conveniadas?
+            </p>
+            <div class="diag-form-fields">
+              <label class="diag-field">
+                <input type="text" id="diag-input-nome" placeholder=" " autocomplete="name" required>
+                <span>Seu Nome Completo</span>
+              </label>
+
+              <label class="diag-field">
+                <input type="tel" id="diag-input-whatsapp" placeholder=" " autocomplete="tel" maxlength="15" required>
+                <span>WhatsApp com DDD</span>
+              </label>
+            </div>
+
+            <div class="diag-privacy-note">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+              <span>Seus dados são confidenciais. Não enviamos spam nem faremos ligações invasivas.</span>
+            </div>
+
+          </div>
+
+          <!-- ================= TELA DE SUCESSO ================= -->
+          <div class="diag-success-panel" id="diag-success-panel">
+            <div class="diag-success-icon">✓</div>
+            <h3 class="diag-success-title">Estudo Preliminar <em>Pronto!</em></h3>
+            <p class="diag-success-desc">
+              Recebemos suas preferências. Nossa assessoria já preparou o estudo comparativo oficial com as melhores oportunidades da Embracon e CNVW.
+            </p>
+            <Button
+              href="#"
+              target="_blank"
+              id="diag-success-whatsapp-btn"
+              text="Abrir Minha Simulação no WhatsApp"
+            />
+          </div>
+
+          <!-- Navegação dos Passos (Botões Voltar / Avançar) -->
+          <div class="diag-nav-row" id="diag-nav-row">
+            <button type="button" class="btn-diag-back" id="btn-diag-prev" style="visibility: hidden;">
+              ← Voltar
+            </button>
+
+            <Button
+              type="button"
+              class="btn-diag-next"
+              id="btn-diag-next"
+              text="Continuar Passo 2"
+              labelId="diag-btn-text"
+              labelCloneId="diag-btn-text-clone"
+            />
+          </div>
+
+        </div>
+
+        <!-- LADO DIREITO: O HUD "Raio-X do seu Planejamento" -->
+        <aside class="diag-hud-card gb" data-spot data-blur-scroll>
+          <div class="hud-header">
+            <div class="hud-title-wrap">
+              <span class="hud-radar-dot"></span>
+              <span class="hud-title">Raio-X do Planejamento</span>
+            </div>
+            <span class="hud-live-tag">Tempo Real</span>
+          </div>
+
+          <div class="hud-spec-list">
+            <div class="hud-spec-item">
+              <span class="hud-spec-label">Objetivo Selecionado</span>
+              <span class="hud-spec-val" id="hud-val-objetivo">Imóveis & Construção</span>
+            </div>
+
+            <div class="hud-spec-item">
+              <span class="hud-spec-label">Faixa de Crédito Estimada</span>
+              <span class="hud-spec-val highlight-gold" id="hud-val-credito">R$ 250k a R$ 500k</span>
+            </div>
+
+            <div class="hud-spec-item">
+              <span class="hud-spec-label">Estratégia Recomendada</span>
+              <span class="hud-spec-val" id="hud-val-estrategia">Aceleração / Curto Prazo</span>
+            </div>
+
+            <div class="hud-spec-item">
+              <span class="hud-spec-label">Lance Embutido Autorizado</span>
+              <span class="hud-spec-val highlight-cyan" id="hud-val-lance">Até 30% da Carta</span>
+            </div>
+
+            <div class="hud-spec-item">
+              <span class="hud-spec-label">Indexador Oficial de Compra</span>
+              <span class="hud-spec-val" id="hud-val-indexador">INCC (Construção Civil)</span>
+            </div>
+
+            <div class="hud-spec-item">
+              <span class="hud-spec-label">Administradoras Homologadas</span>
+              <span class="hud-spec-val" id="hud-val-parceiras">Embracon · CNVW</span>
+            </div>
+          </div>
+
+          <!-- Card de Benefício Financeiro -->
+          <div class="hud-benefit-banner">
+            <div class="benefit-title">
+              <span>★</span> Economia Patrimonial Comprovada
+            </div>
+            <p class="benefit-desc">
+              Sem juros compostos. Taxa de administração a partir de 12% total diluída no contrato (~1% ao ano!).
+            </p>
+          </div>
+
+          <!-- Compliance BACEN -->
+          <div class="hud-compliance-strip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <span>Fiscalizado pelo Banco Central do Brasil · ABAC</span>
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </section>

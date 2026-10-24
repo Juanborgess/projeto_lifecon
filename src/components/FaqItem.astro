@@ -1,0 +1,56 @@
+---
+// FaqItem.astro - Card de Dúvida / Accordion Interativo
+interface Props {
+  num: string;
+  categoryTag: string;
+  category: "lances" | "custos" | "seguranca";
+  question: string;
+  isActive?: boolean;
+  takeawayTitle?: string;
+  takeawayText: string;
+}
+
+const {
+  num,
+  categoryTag,
+  category,
+  question,
+  isActive = false,
+  takeawayTitle = "Regra de Ouro",
+  takeawayText,
+} = Astro.props;
+---
+
+<article
+  class:list={["faq-item gb", isActive && "active"]}
+  data-spot
+  data-blur-scroll
+  data-cat={category}
+>
+  <button type="button" class="faq-trigger" aria-expanded={isActive ? "true" : "false"}>
+    <div class="faq-trigger-content">
+      <span class="faq-num">{num}</span>
+      <div class="faq-meta-wrap">
+        <span class="faq-category-tag">{categoryTag}</span>
+        <h3 class="faq-question-text">{question}</h3>
+      </div>
+    </div>
+    <div class="faq-toggle-icon" aria-hidden="true">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="5" x2="12" y2="19"></line>
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+      </svg>
+    </div>
+  </button>
+  <div class="faq-content">
+    <div class="faq-inner">
+      <div class="faq-answer-text">
+        <slot />
+      </div>
+      <div class="faq-takeaway-box">
+        <span class="faq-takeaway-star">★</span>
+        <span><strong>{takeawayTitle}:</strong> {takeawayText}</span>
+      </div>
+    </div>
+  </div>
+</article>
