@@ -1163,7 +1163,11 @@ import fotoRafael from '../assets/foto-rafael-borges.png';
           }
 
           if (hudParceiras) {
-            hudParceiras.textContent = 'Embracon · CNVW';
+            if (state.objetivo === 'imoveis') {
+              hudParceiras.textContent = 'Embracon';
+            } else {
+              hudParceiras.textContent = 'Embracon · CNVW';
+            }
           }
         }
 

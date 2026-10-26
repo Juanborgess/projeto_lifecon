@@ -1,0 +1,585 @@
+================================================================================
+       ARQUITETURA DE COPYWRITING & MARKETING ESTRATÉGICO — LIFECON
+================================================================================
+Posicionamento Central: Consultoria de planejamento patrimonial ético e transparente.
+Frase Guia da Marca: "Antes de vender um plano, queremos entender o seu plano."
+Tom de Voz: Maduro, transparente, seguro, empático, consultivo e desprovido de 
+jargões agressivos ou promessas irreais de contemplação.
+================================================================================
+
+--------------------------------------------------------------------------------
+PALETA DE CORES OFICIAL DA MARCA (EXTRAÍDA DA LOGO & BRIEFING)
+--------------------------------------------------------------------------------
+
+1. AZUL-MARINHO PROFUNDO (Deep Navy / Background Master)
+   • HEX: #001536  |  RGB(0, 21, 54)
+   • Função: Cor base de fundo e autoridade máxima. Transmite solidez institucional, 
+     segurança financeira, sobriedade e prestígio corporativo.
+   • Aplicação: Fundo principal, cabeçalho, rodapé e blocos de fechamento.
+
+2. AZUL GLOW RADIAL (Royal Navy Glow / Profundidade)
+   • HEX: #023C6A  |  RGB(2, 60, 106)
+   • Função: Efeito de iluminação e profundidade sutil sobre o azul escuro, 
+     evitando uma aparência chapada ou sem vida.
+   • Aplicação: Gradientes radiais suaves de fundo, luzes de destaque em cards.
+
+3. DOURADO NOBRE / OURO ACETINADO ("CON" — Patrimônio & Conquista)
+   • HEX: #CA9D63  |  RGB(202, 157, 99)
+   • Destaque de Luz (Highlight): #D8AC71  |  RGB(216, 172, 113)
+   • Função: Simboliza patrimônio construído, prosperidade e sofisticação.
+   • Aplicação: Título "CON", divisores finos, detalhes de alto valor, 
+     destaques da seção de patrimônio e selos de garantia ética.
+
+4. CIANO TURQUESA DE CRESCIMENTO (Arrow Cyan — Futuro & Alavancagem)
+   • HEX: #09AFC6  |  RGB(9, 175, 198)
+   • Função: A cor da seta ascendente da logo. Representa visão de futuro, agilidade, 
+     modernidade e direcionamento para objetivos.
+   • Aplicação: Ícones de destaque, botões interativos de ação, pontos de clique 
+     do WhatsApp, indicadores de progresso no diagnóstico e pontos de foco visual.
+
+5. BRANCO PURO & PRATA PLATINA ("LIFE" & Tipografia)
+   • HEX: #FFFFFF  |  RGB(255, 255, 255)
+   • Prata Platina (Bordas e detalhes): #E2E8F0  |  RGB(226, 232, 240)
+   • Função: Transparência radical, clareza e alta legibilidade.
+   • Aplicação: Tipografia principal de títulos, slogan oficial e bordas 
+     metálicas minimalistas.
+================================================================================
+
+--------------------------------------------------------------------------------
+IDENTIDADE DO VÍDEO DO HERO (SCROLLYTELLING / SCROLL-DRIVEN ANIMATION)
+--------------------------------------------------------------------------------
+
+Ativos Gerados:
+- Desktop: frame-desktop.mp4 (16:9 Landscape | 4K)
+- Mobile:  frame-mobile.mp4  (9:16 Portrait | 4K)
+
+1. CONCEITO CENTRAL: "A Seta Ascendente e os Marcos de Vida"
+   O vídeo do Hero não é um elemento decorativo estático; ele é a espinha dorsal da 
+   narrativa de entrada do site. Ele traduz visualmente a assinatura da marca: 
+   "A vida é feita de planos."
+
+2. NARRATIVA TEMPORAL VINCULADA AO SCROLL (FRAME A FRAME):
+   • Ponto de Partida (00:00 - 00:02 | Scroll no Topo):
+     A seta 3D repousa imponente em macro, esculpida em metal escovado nobre com 
+     o corpo em cristal líquido ciano turquesa (#09AFC6). Representa o momento inicial: 
+     o desejo de realizar algo grande.
+   
+   • O Ponto de Virada / A Conquista (00:03 - 00:05 | Scroll Intermediário):
+     Conforme o visitante rola a página, a seta decola em trajetória diagonal ascendente 
+     com feixes de partículas douradas e ciano. No ápice da aceleração (aos 00:04), 
+     as faces reflexivas da seta revelam nitidamente os dois maiores símbolos da 
+     conquista planejada:
+     - A fachada moderna de uma casa de alto padrão iluminada pelo sol nascente;
+     - O volante e o cockpit esportivo de um veículo de luxo.
+   
+   • A Consagração da Marca (00:06 - 00:09 | Chegada do Scroll):
+     A seta desacelera e ancora na posição superior com autoridade. A tipografia 
+     oficial "LIFECON" emerge com as letras "LIFE" em branco fosco nobre e as letras 
+     "CON" em ouro champanhe (#CA9D63), culminando em uma explosão de brilho solar 
+     (lens flare) no exato instante em que o logotipo se fecha com o slogan 
+     "A vida é feita de planos." e a assinatura "CONSÓRCIOS • PLANEJAMENTO • PATRIMÔNIO".
+
+3. ENGENHARIA DE EXPERIÊNCIA DE USUÁRIO (UI/UX & SCROLL-DRIVEN SCRUBBING):
+   • Interatividade Reversa: Ao rolar para baixo, a seta voa e realiza; ao rolar para 
+     cima, o vídeo retrocede no tempo com fluidez matemática contínua.
+   • Respiro Visual para Interface: Tanto a versão desktop quanto a versão mobile 
+     possuem fundos escuros profundos e contrastantes, permitindo a perfeita legibilidade 
+     dos títulos (H1), botões de ação e do Seletor de Planos sobrepostos, sem poluição.
+================================================================================
+
+--------------------------------------------------------------------------------
+SEÇÃO 01: HERO SECTION — O IMPACTO CINEMATOGRÁFICO & A ESCUTA ATIVA
+--------------------------------------------------------------------------------
+
+[ESTRATÉGIA DE MARKETING — O PRINCÍPIO DO ALTO PADRÃO]
+Quando a página possui um vídeo 3D de scrollytelling cinematográfico em 4K, colocar 
+parágrafos longos é um erro que destrói a experiência. O vídeo já faz 70% da conexão 
+emocional ao materializar a casa e o carro dentro da seta da Lifecon.
+
+A copy do Hero, portanto, deve agir como uma assinatura de private banking:
+1. Menos ruído, máxima autoridade. Não grita, não tenta "vender no desespero".
+2. Coloca o cliente no centro imediatamente através de uma verdade universal da marca.
+3. Convida à ação sem atrito e conecta organicamente a rolagem com a evolução do vídeo.
+
+[COPYWRITING ESTRATÉGICO DA SEÇÃO]
+
+• Eyebrow Minimalista (Geist Mono · Discreto e nobre):
+  "LIFECON · ASSESSORIA PATRIMONIAL & CONSÓRCIOS"
+
+• Headline Principal (H1 — O Posicionamento Definitivo):
+  "Antes de vender um plano,
+   queremos entender o seu."
+
+• Sub-headline (Uma linha cirúrgica, sem jargões e sem enrolação):
+  "A estratégia inteligente para conquistar imóveis, veículos e patrimônio sólido. 
+   Com números reais, transparência absoluta e quem acompanha você do início ao fim."
+
+• Chamada de Ação Primária (Um único botão de alto valor tátil):
+  [ Traçar Meu Planejamento → ]
+  (Leva suavemente ao Diagnóstico Interativo)
+
+• Micro-Interação Integrada ao Vídeo (Scroll Cue):
+  "Role para ver o planejamento tomar forma"
+  (Aparece com o ícone sutil de rolagem, guiando o dedo/mouse do visitante para 
+   acionar a animação da seta decolando com a casa e o carro)
+================================================================================
+
+--------------------------------------------------------------------------------
+SEÇÃO 02: AS SOLUÇÕES LIFECON & O CONTRASTE FINANCEIRO
+--------------------------------------------------------------------------------
+
+[ESTRATÉGIA DE MARKETING]
+O lead compra a transformação, não o produto financeiro. Em vez de simplesmente 
+dizer "vendemos imóveis e carros", mostramos a inteligência financeira do consórcio 
+frente ao financiamento bancário (onde o cliente paga 2 ou 3 bens para ter 1).
+Aqui incorporamos os diferenciais reais das administradoras líderes representadas 
+pela Lifecon (Embracon e CNVW — Consórcio Nacional Volkswagen), comprovando que 
+o consórcio tem taxas de administração pré-fixadas e sem juros bancários, prazos 
+sob medida e a alavancagem do Lance Embutido de até 30%.
+
+[COPYWRITING DA SEÇÃO]
+
+• Título da Seção:
+  "Não entregamos apenas cartas de crédito.
+   Estruturamos caminhos viáveis para o que você quer realizar."
+
+• Subtítulo:
+  "Conheça as três principais frentes de planejamento da Lifecon:"
+
+• Solução 1: Consórcio Imobiliário & Construção
+  - Título: "Imóveis, Terrenos, Construção ou Reforma"
+  - Faixa de Crédito Real: "R$ 100.000,00 a R$ 1.200.000,00+"
+  - Prazos Flexíveis: "De 50 e 79 meses (tiro curto / grupos rápidos) a 120, 180 meses e até 200, 220 e 240 meses (Plano Estendido / Parcelinha em até 20 anos)."
+  - Contexto: "Para quem quer sair do aluguel, adquirir um imóvel de maior padrão, 
+    construir do zero ou reformar sem comprometer o fluxo de caixa com juros compostos."
+  - Diferencial Estratégico: "Possibilidade de utilização do FGTS para oferta de 
+    lances ou amortização (SFH) somado ao Lance Embutido de 25% a 30% da própria carta para acelerar a contemplação sem tirar dinheiro do bolso."
+  - Reajuste Oficial: "INCC (Índice Nacional de Custo da Construção) — protege o seu poder de compra para que sua carta acompanhe o valor real de mercado do imóvel."
+  - Taxa Administrativa: "A partir de 12% a 18% total diluída no contrato (menos de 1% a 1,2% ao ano)."
+
+• Solução 2: Consórcio de Veículos & Mobilidade
+  - Título: "Automóveis, Motos e Renovação de Frotas"
+  - Faixa de Crédito Real: "R$ 45.000,00 a R$ 180.000,00 (Autos) | R$ 15.000,00 a R$ 30.000,00 (Motos)"
+  - Prazos Flexíveis: "60, 80, 90 e 100 meses para automóveis | 40 e 70 meses para motos."
+  - Contexto: "Troque de veículo no momento certo, com parcelas que cabem no seu 
+    planejamento e sem a desvalorização acelerada que os financiamentos tradicionais causam."
+  - Diferencial Estratégico: "Poder de compra à vista garantido na liberação do crédito, 
+    permitindo negociar descontos de até 15% na concessionária ou com particular. Concorra por Sorteio, Lance Fixo (25% ou 50%) e Lance Embutido de até 25%."
+  - Reajuste Oficial: "IPCA (Inflação oficial) — mantendo o poder de compra alinhado aos preços de veículos novos e seminovos."
+  - Taxa Administrativa: "A partir de 13% total para 60 meses (apenas ~2,1% ao ano!)."
+
+• Solução 3: Planejamento Patrimonial, Pesados & Renda Passiva
+  - Título: "Alavancagem Inteligente de Longo Prazo & Frotas Pesadas"
+  - Faixa de Crédito Real: "R$ 200.000,00 a R$ 700.000,00+ (Pesados, Caminhões e Agrícola) | Até múltiplos milhões em cotas consorciadas"
+  - Prazos Flexíveis: "100 meses com opção de Plano 50% / Parcelinha (pague meia parcela até a contemplação)."
+  - Contexto: "Para investidores e empresários que enxergam o consórcio como 
+    ferramenta de disciplina financeira para multiplicar ativos, renovar maquinário ou frotas pesadas e gerar renda de locação no futuro."
+  - Diferencial Estratégico: "Construção de capital sólido a custo financeiro 
+    infinitamente menor do que qualquer linha de crédito tradicional (taxas totais de 12% a 14% em 100 meses)."
+  - Modalidades de Contemplação: "Sorteio, Lance Livre e Lance Fixo de 25% e 50% com Lance Embutido de 25%."
+
+• O Argumento Lógico de Contraste (Consórcio vs. Financiamento):
+  - No Financiamento Bancário: "Você paga parcelas compostas por juros compostos pesados (10% a 14% AO ANO), 
+    compromete uma entrada gigantesca de 20% a 30% à vista e no final pagou de 220% a 300% do valor do bem."
+  - No Planejamento Lifecon: "Você paga apenas a taxa de administração diluída (a partir de 12% a 18% TOTAL do contrato), 
+    com opções de 0% de taxa antecipada, lance embutido de até 30% da própria carta e reajustes que mantêm o poder de compra da carta, comprando à vista."
+
+• CTA da Seção:
+  "Quero Simular as Condições para o Meu Objetivo"
+
+--------------------------------------------------------------------------------
+SEÇÃO 03: O DIAGNÓSTICO GUIADO LIFECON (A MÁQUINA DE LEADS)
+--------------------------------------------------------------------------------
+
+[ESTRATÉGIA DE MARKETING]
+Formulários comuns têm alta taxa de abandono porque parecem interrogatórios frios. 
+Aqui reposicionamos a captura de dados como uma "Consultoria de Viabilidade Gratuita". 
+O lead sente que está recebendo um diagnóstico pessoal desenhado para o bolso dele, 
+ancorado nas regras oficiais das administradoras homologadas Embracon e CNVW.
+
+[COPYWRITING DA SEÇÃO]
+
+• Título da Ferramenta:
+  "Descubra qual planejamento financeiro faz sentido para você."
+
+• Subtítulo:
+  "Responda a 4 perguntas simples e receba um estudo preliminar de viabilidade 
+   diretamente com nosso idealizador, sem nenhum compromisso."
+
+• Perguntas do Diagnóstico (A Jornada do Lead Baseada na Tabela de Vendas):
+  - Pergunta 1 (Objetivo): 
+    "Qual é o plano principal que você deseja colocar em prática?"
+    [ Comprar Imóvel / Construir ] [ Automóveis & Frotas ] [ Pesados & Maquinário ] [ Alavancagem Patrimonial ]
+
+  - Pergunta 2 (Dimensão Financeira do Crédito): 
+    "Qual valor aproximado de crédito você precisa para realizar esse plano?"
+    • Se Imóvel: [ R$ 100k a 250k ] [ R$ 250k a 500k ] [ R$ 600k a 1.2M ] [ Acima de R$ 1.2M ]
+    • Se Veículo: [ R$ 45k a 80k ] [ R$ 80k a 120k ] [ R$ 120k a 180k ]
+    • Se Pesados/Patrimônio: [ R$ 200k a 400k ] [ R$ 400k a 700k ] [ Acima de R$ 700k ]
+
+  - Pergunta 3 (Horizonte de Tempo & Estratégia de Contemplação): 
+    "Qual é a sua expectativa de prazo e estratégia de conquista?"
+    [ Curto Prazo (Estratégia com Lance Livre ou Lance Embutido de até 30%) ]
+    [ Médio Prazo (Lance Fixo pré-determinado de 25% a 50%) ]
+    [ Longo Prazo / Disciplinado (Parcelas reduzidas no Plano Estendido de até 240 meses) ]
+
+  - Pergunta 4 (Orçamento Confortável): 
+    "Qual faixa de parcela mensal não compromete a segurança financeira da sua família?"
+    [ Faixas de valor mensais conforme o crédito selecionado ]
+
+• Conclusão & Captura:
+  - Título do Fechamento: "Perfeito. Já temos as informações necessárias para traçar seu cenário."
+  - Texto de Apoio: "Para onde podemos enviar a análise comparativa das administradoras recomendadas?"
+  - Campos: Nome e Sobrenome e WhatsApp.
+  - Micro-copy de Privacidade: "Seus dados estão protegidos. Não enviamos spam nem faremos ligações inconvenientes."
+
+• CTA Final do Diagnóstico:
+  "Receber Meu Estudo de Viabilidade no WhatsApp"
+
+--------------------------------------------------------------------------------
+SEÇÃO 04: AUTORIDADE, HUMANIZAÇÃO & OS 4 PILARES
+--------------------------------------------------------------------------------
+
+[ESTRATÉGIA DE MARKETING]
+Ninguém investe em consórcio confiando apenas em uma logomarca. As pessoas compram 
+de pessoas. O Rafael Gomes Borges é a âncora de integridade da Lifecon. Esta seção 
+conecta a história dele com os 4 compromissos inegociáveis de atendimento.
+
+[COPYWRITING DA SEÇÃO]
+
+• Título da Seção:
+  "Quem está por trás da Lifecon?"
+
+• Subtítulo:
+  "Existe um nome, uma trajetória sólida e o compromisso real de construir relacionamentos de longo prazo."
+
+• Carta Aberta do Rafael Gomes Borges:
+  "Olá, eu sou o Rafael Gomes Borges, idealizador da Lifecon.
+   
+   Ao longo de anos atuando na área comercial, vi de perto como o mercado financeiro 
+   muitas vezes trata as pessoas apenas como números de contrato. No segmento de 
+   consórcios, isso é ainda mais delicado: promessas milagrosas de contemplação rápida 
+   e discursos agressivos de venda acabam frustrando quem só queria planejar a vida.
+   
+   A Lifecon nasceu para ser o contraponto disso.
+   
+   Nosso papel não é empurrar uma cota para bater meta. Nosso compromisso é sentar com 
+   você, entender a sua realidade de caixa, apresentar os prós e contras de cada 
+   estratégia e acompanhar você mês a mês até a contemplação e o faturamento do seu bem.
+   
+   Aqui, a sua confiança é tratada com o respeito que ela merece."
+
+• Os 4 Pilares Inegociáveis da Lifecon:
+  1. TRANSPARÊNCIA RADICAL
+     "Toda regra, taxa de administração, seguro e histórico de assembleia são 
+      explicados com clareza antes de qualquer assinatura. Sem surpresas no caminho."
+
+  2. PLANEJAMENTO ANTES DA VENDA
+     "Antes de escolher qualquer administradora, nós entendemos o seu orçamento 
+      para garantir que as parcelas sejam saudáveis do início ao fim."
+
+  3. PROXIMIDADE REAL
+     "Você não fala com uma central telefônica impessoal. Você fala com um especialista 
+      dedicado que conhece o seu nome e o seu projeto."
+
+  4. ACOMPANHAMENTO ATÉ A CONQUISTA
+     "A nossa relação começa na contratação, mas continua em cada assembleia, na 
+      orientação estratégica de lances e no suporte para a retirada do seu bem."
+
+• CTA da Seção:
+  "Quero Conversar Pessoalmente com o Rafael"
+
+--------------------------------------------------------------------------------
+SEÇÃO 05: A CENTRAL DE CLAREZA — QUEBRA DE OBJEÇÕES
+--------------------------------------------------------------------------------
+
+[ESTRATÉGIA DE MARKETING]
+O cliente tem dúvidas que ele muitas vezes tem vergonha de perguntar ou medo de 
+receber respostas enganosas de vendedores. Responder com honestidade brutal gera 
+uma autoridade desproporcional.
+
+[COPYWRITING DA SEÇÃO]
+
+• Título da Seção:
+  "A verdade sobre consórcio, sem meias palavras."
+
+• Subtítulo:
+  "Tire suas dúvidas com quem joga limpo sobre regras, prazos e funcionamento."
+
+• Objeção 1: "A Lifecon garante que serei contemplado rapidamente?"
+  Resposta:
+  "Nunca. Desconfie imediatamente de qualquer empresa ou corretor que prometa 
+   contemplação com prazo garantido — essa prática é proibida pelo Banco Central e 
+   constitui golpe. As contemplações ocorrem exclusivamente por sorteio e por lances 
+   nas assembleias mensais. O que a Lifecon faz é analisar o histórico do grupo para 
+   estruturar estratégias de lances coerentes com a sua disponibilidade financeira."
+
+• Objeção 2: "Como funciona a oferta de lances para antecipar a compra? Preciso ter dinheiro em mãos?"
+  Resposta:
+  "Não necessariamente! Essa é uma das maiores vantagens estratégicas do consórcio moderno. 
+   Além do Lance Livre (onde quem oferta o maior percentual com recursos próprios é contemplado), 
+   a Lifecon trabalha com duas modalidades fundamentais:
+   1. Lance Embutido (25% a 30%): Você pode utilizar até 25% a 30% do próprio valor da carta de 
+      crédito contratada como oferta de lance. Ou seja, você antecipa a contemplação sem tirar 
+      um único centavo do bolso de largada!
+   2. Lance Fixo (faixas pré-definidas de 25%, 28%, 31%, 35% ou 50% dependendo do grupo): Todos 
+      os participantes daquela faixa concorrem em pé de igualdade, com desempate pela pedra-chave 
+      da Loteria Federal. Isso impede que apenas quem tem grandes quantias vença a assembleia."
+
+• Objeção 3: "Posso utilizar meu FGTS para compra de imóvel?"
+  Resposta:
+  "Sim! Nas modalidades de consórcio imobiliário destinadas a moradia própria, você 
+   pode utilizar 100% dos recursos elegíveis da sua conta do FGTS para ofertar lances, 
+   abater saldo devedor ou amortizar parcelas, rigorosamente dentro das regras operacionais 
+   do Sistema Financeiro da Habitação (SFH)."
+
+• Objeção 4: "Como funcionam os reajustes anuais das parcelas (INCC e IPCA)? O consórcio não fica mais caro?"
+  Resposta:
+  "O reajuste anual não é juro nem taxa bancária — é a proteção do seu poder de compra!
+   Em consórcios imobiliários, a carta é atualizada pelo INCC (custo da construção civil). 
+   Em veículos e frotas, é atualizada pelo IPCA (inflação oficial).
+   Isso significa que, se você foi sorteado no 3º ou 5º ano do plano, o valor liberado 
+   para comprar seu imóvel ou carro terá subido exatamente na mesma proporção do mercado, 
+   garantindo que você compre o bem planejado à vista, sem defasagem."
+
+• Objeção 5: "Preciso pagar taxa antecipada ou entrada pesada para contratar?"
+  Resposta:
+  "Absolutamente não. Ao contrário dos financiamentos bancários (que exigem de 20% a 30% 
+   de entrada à vista), na Lifecon temos grupos com 0% de taxa antecipada e opções 
+   com taxa antecipada reduzida (1% a 2%) ou suavemente parcelada em até 12 vezes (1,2%). 
+   Você começa a investir no seu patrimônio sem descapitalizar a sua reserva financeira."
+
+• Objeção 6: "O que acontece se eu tiver um imprevisto financeiro durante o plano?"
+  Resposta:
+  "A vida muda, e o planejamento deve ser flexível. Dependendo da administradora e das 
+   regras do grupo, é possível reduzir o valor do crédito para diminuir o valor das 
+   parcelas futuras, transferir a cota para outra pessoa ou negociar condições. Nossa 
+   consultoria estará ao seu lado para encontrar a melhor saída."
+
+• Objeção 7: "Quais administradoras a Lifecon representa?"
+  Resposta:
+  "Trabalhamos exclusivamente com administradoras líderes de mercado e com décadas de solidez, 
+   sendo representantes autorizados da Embracon e da CNVW (Consórcio Nacional Volkswagen), 
+   ambas devidamente autorizadas e fiscalizadas pelo Banco Central do Brasil e associadas 
+   à ABAC (Associação Brasileira de Administradoras de Consórcios)."
+
+--------------------------------------------------------------------------------
+SEÇÃO 06: FECHAMENTO, CONVERSÃO DECISIVA & COMPLIANCE
+--------------------------------------------------------------------------------
+
+[ESTRATÉGIA DE MARKETING]
+O encerramento do funil. O lead já foi educado, já entendeu o valor, já conhece 
+o Rafael e já teve suas maiores dúvidas sanadas. Agora é a chamada para ação final, 
+reforçando que ele não tem nada a perder em bater um papo.
+
+[COPYWRITING DA SEÇÃO]
+
+• Título do Fechamento:
+  "O primeiro passo para realizar seu objetivo não é assinar um contrato.
+   É entender as suas possibilidades reais."
+
+• Texto de Apoio:
+  "Agende uma conversa consultiva com a equipe da Lifecon. 
+   Sem pressão comercial, sem termos técnicos difíceis e com foco total no que 
+   faz sentido para o seu momento."
+
+• Frase de Assinatura:
+  "Antes de vender um plano, queremos entender o seu plano."
+
+• Chamada de Ação Principal:
+  - Botão Primário em Destaque: "Iniciar Minha Conversa no WhatsApp Agora"
+  - Micro-texto abaixo do botão: "Atendimento direto e personalizado • Resposta rápida"
+  - Telefone / WhatsApp Oficial: +55 (21) 97283-8954
+  - Link de Disparo Direto: https://wa.me/5521972838954
+
+• Rodapé Institucional & Compliance Regulatório:
+  - Lifecon — Planejamento Patrimonial e Consórcios.
+  - Slogan: "A vida é feita de planos."
+  - Links: Termos de Uso | Política de Privacidade (LGPD) | Atendimento
+  - Aviso Obrigatório BACEN:
+    "A Lifecon atua como representação e assessoria comercial autorizada de 
+     administradoras de consórcios autorizadas e fiscalizadas pelo Banco Central 
+     do Brasil. O consórcio é um instrumento financeiro de compra planejada em grupo 
+     e não assegura data pré-fixada de contemplação por sorteio."
+================================================================================
+
+================================================================================
+ANEXO TÉCNICO OFICIAL: ESTRUTURA DE PRAZOS, TAXAS E LANCES (EMBRACON & CNVW)
+================================================================================
+
+Este anexo serve de referência para guiar a consultoria e a copy da Lifecon sem 
+promessas irreais, reforçando que as administradoras oficiais representadas são 
+a Embracon e a CNVW (Consórcio Nacional Volkswagen).
+
+--------------------------------------------------------------------------------
+1. MATRIZ DE TABELAS DO SEGMENTO IMOBILIÁRIO (PÁGINAS 1 A 4)
+--------------------------------------------------------------------------------
+
+A) TABELA NACIONAL SELECT MAIS "SM" IMÓVEL:
+   • Crédito: R$ 100.000,00 a R$ 500.000,00 e R$ 600.000,00 a R$ 1.200.000,00
+   • Prazo: 180 meses (15 anos)
+   • Taxa Antecipada: 2% do crédito
+   • Taxa Adm Total: 15% a 18% de acordo com o prazo (apenas 0,83% a 1,0% a.a.)
+   • Fundo de Reserva: 2%
+   • Lance Embutido: 25% da própria carta
+   • Reajuste: INCC
+   • Modalidade de Contemplação: Sorteio, Lance Livre, Lance Fixo de 25% e 50%
+
+B) TABELA IMÓVEL ATÉ 240 MIL "BI1" & ACIMA DE 250 MIL "BI2":
+   • Crédito BI1: R$ 100.000,00 a R$ 240.000,00 | Prazo: 180 meses | Taxa Adm: 24% | Antecipada: 1%
+   • Crédito BI2 Médio: R$ 250.000,00 a R$ 500.000,00 | Prazo: 180 meses | Taxa Adm: 21% | Antecipada: 1% | Fundo: 1,008% | Lance Fixo exclusivo de 28% ou 31%
+   • Crédito BI2 Alto: R$ 600.000,00 a R$ 1.200.000,00 | Prazo: 180 meses | Taxa Adm: 21% | Antecipada: 1% | Lance Fixo: 25% e 50%
+   • Lance Embutido em todas: 25% | Reajuste: INCC
+
+C) TABELA SM AGIBANK "SMA" IMÓVEL — GRUPO 8001 (TIRO CURTO):
+   • Crédito: R$ 120.000,00 a R$ 220.000,00
+   • Prazo Especial: 79 meses (pouco mais de 6 anos e meio!)
+   • Taxa Antecipada: 2% do crédito
+   • Taxa Adm Total: 13% a 15% (taxa baixíssima de ~2% a.a.)
+   • Fundo de Reserva: Apenas 1,008%
+   • Destaque Matador: LANCE EMBUTIDO DE 30% no lance livre ou 2º fixo!
+   • Lance Fixo: 28% ou 31% | Reajuste: INCC
+
+D) TABELA SELECT SMART "TSS" IMÓVEL — GRUPO 7084:
+   • Crédito: R$ 120.000,00 a R$ 220.000,00
+   • Prazo: 120 meses (10 anos exatos)
+   • Taxa Adm Total: 15% a 16% | Taxa Antecipada: 2% | Lance Embutido: 25% | Fixo: 25% e 50%
+
+E) PARCERIA NAC B "PB1" E "PB2" IMÓVEL (ENTRADA ZERO / SEM ANTECIPADA):
+   • Crédito PB1: R$ 100.000,00 a R$ 240.000,00 | Prazo: 165 meses | Taxa Adm: 24%
+   • Crédito PB2: R$ 250.000,00 a R$ 500.000,00 | Prazo: 165 meses | Taxa Adm: 21%
+   • Destaque Matador: TAXA ANTECIPADA = NÃO POSSUI (0% de desembolso inicial!)
+   • Fundo de Reserva: 2% | Lance Embutido: 25% | Lance Fixo: 25% e 50%
+
+F) TABELA BANCO PAN "P01" — GRUPO 8025 (ACELERAÇÃO MÁXIMA):
+   • Crédito: R$ 200.000,00 a R$ 400.000,00
+   • Prazo Ultra Curto: 50 MESES (4 anos e 2 meses!)
+   • Taxa Adm Total: 14%
+   • Destaque Matador: LANCE EMBUTIDO DE 30%
+   • Lances Fixos Estratégicos: 35% e 45% | Fundo: 5% | Reajuste: INCC
+
+G) TABELA BANCO PAN "P03" — GRUPO 8029 (MENOR CUSTO FINANCEIRO DO BRASIL):
+   • Crédito: R$ 150.000,00 a R$ 300.000,00
+   • Prazo: 124 meses
+   • Taxa Adm Total: APENAS 12% (Menos de 1% ao ano!)
+   • Fundo de Reserva Mínimo: APENAS 1%
+   • Destaque Matador: LANCE EMBUTIDO DE 30% da carta | Lance Fixo: 35%
+
+H) PLANO ESTENDIDO IMÓVEL (ATÉ 240 MESES / 20 ANOS — PSE, SEP, TP, TEP, E1, SUE):
+   • Prazos Disponíveis: 200, 220 e 240 meses (ideal para quem quer parcela igual ou menor que o aluguel)
+   • Faixas: R$ 120.000,00 a R$ 600.000,00 e R$ 600.000,00 a R$ 1.200.000,00+
+   • Taxas Adm Totais: 
+     - Select Estendido Prime (SEP): 18% (200m), 19% (220m) e 20% (240m) -> Menos de 1% a.a.!
+     - Select Estendido (PSE): 20% (200m), 21% (220m) e 22% (240m)
+     - Super Imóvel Estendido (SUE): 20% a 24%
+   • Facilidade de Antecipada: Na Tabela Parcelinha Imóvel ("TP" e "TEP"), a taxa antecipada de 1,2% 
+     é parcelada em até 12x, tornando a entrada imperceptível no bolso.
+   • Lance Embutido: 25% | Reajuste: INCC
+
+--------------------------------------------------------------------------------
+2. MATRIZ DE TABELAS DO SEGMENTO AUTOMÓVEL & FROTAS (PÁGINAS 5 A 7)
+--------------------------------------------------------------------------------
+
+A) TABELA B AUTO "BA" AUTOMÓVEL (ENTRADA ZERO):
+   • Crédito: R$ 45.000,00 a R$ 180.000,00
+   • Prazo: 80 meses
+   • Taxa Antecipada: NÃO POSSUI (0% de antecipada!)
+   • Taxa Adm Total: 20% | Fundo: 3% | Lance Embutido: 25%
+   • Lance Fixo: 25% e 50% | Reajuste: IPCA
+
+B) TABELA AUTO B + "ABM" & SELECT MAIS "SM":
+   • Crédito: R$ 45.000,00 a R$ 180.000,00 | Prazo: 80 meses
+   • Taxa Antecipada ABM: 1% nas 2 primeiras parcelas | Taxa Adm: 17%
+   • Taxa Antecipada SM: 2% nas 2 primeiras parcelas | Taxa Adm: 13% e 14%
+   • Lance Embutido: 25% | Lance Fixo: 25% e 50% | Reajuste: IPCA
+
+C) TABELA SELECT SMART "TSS" AUTO (5 ANOS / CURTO PRAZO):
+   • Crédito: R$ 45.000,00 a R$ 180.000,00
+   • Prazo: 60 meses (5 anos)
+   • Taxa Adm Total: APENAS 13% (Diluída em 60 meses = ~2,6% a.a.)
+   • Taxa Antecipada: 2% em 2x | Fundo: 3% | Lance Embutido: 25% | Reajuste: IPCA
+
+D) TABELAS ESTENDIDO AUTO ("APE", "ETA", "ASE" — 90 E 100 MESES):
+   • Crédito: R$ 45.000,00 a R$ 180.000,00
+   • Prazos: 90 e 100 meses
+   • Tabela APE: Taxa Antecipada 1,2% parcelada em 12x | Taxa Adm: 21% (90m) e 22% (100m)
+   • Tabela ETA: Taxa Antecipada 1% na primeira parcela | Taxa Adm: 19% a 20%
+   • Tabela ASE: Taxa Antecipada 2% na primeira parcela | Taxa Adm: APENAS 15% (90m) e 16% (100m)!
+   • Lance Embutido: 25% | Lance Fixo: 25% e 50% | Reajuste: IPCA
+
+--------------------------------------------------------------------------------
+3. MATRIZ DE TABELAS DE MOTOS & SERVIÇOS (PÁGINA 8)
+--------------------------------------------------------------------------------
+
+A) TABELA NACIONAL "MB" MOTOCICLETA ATÉ 30 MIL:
+   • Crédito: R$ 15.000,00 a R$ 30.000,00
+   • Prazo: 70 meses
+   • Taxa Antecipada: NÃO POSSUI (0% de antecipada!)
+   • Taxa Adm Total: 20% | Fundo: 5% | Lance Embutido: 25%
+   • Lance Fixo: 50% e Lance Livre | Reajuste: IPCA
+
+B) TABELA NACIONAL "B" CONSÓRCIO PRESENTE (40 MESES):
+   • Crédito: R$ 15.000,00 a R$ 30.000,00
+   • Prazo Rápido: 40 meses
+   • Taxa Antecipada: 0% | Taxa Adm Total: 12% a 21% | Reajuste: IPCA
+
+--------------------------------------------------------------------------------
+4. MATRIZ DE TABELAS DE PESADOS, CAMINHÕES & AGRÍCOLA (PÁGINAS 9 E 10)
+--------------------------------------------------------------------------------
+
+A) PESADOS COM ANTEC 2% "PC2":
+   • Crédito: R$ 200.000,00 a R$ 700.000,00
+   • Prazo: 100 meses
+   • Taxa Antecipada: 2%
+   • Taxa Adm Total: APENAS 12% (Diluída em 100 meses = apenas 1,44% ao ano!)
+   • Fundo de Reserva: 3% | Lance Embutido: 25%
+   • Modalidade: Sorteio, Lance Fixo 25% e 50% e Lance Livre | Reajuste: IPCA
+
+B) TABELA PESADOS SEM ANTECIPAÇÃO "PSR" & TABELA LINEAR "TPL":
+   • Crédito: R$ 200.000,00 a R$ 700.000,00 | Prazo: 100 meses
+   • Taxa Antecipada: 0% (NÃO POSSUI — ZERO ENTRADA!)
+   • Taxa Adm Total: 14% (TPL) e 16% (PSR) | Fundo: 3% | Lance Embutido: 25%
+
+C) AS TABELAS REVOLUCIONÁRIAS DE PLANO 50% (PARCELINHA PESADOS):
+   • Tabela: SP - Select Pesados Plano 50% & Pesados TP Parcelinha
+   • Faixa de Crédito: R$ 350.000,00 a R$ 700.000,00 | Prazo: 100 meses
+   • Taxa Adm Total: 14% (SP) e 18% (TP Parcelinha)
+   • O SEGREDO DO PLANO 50%: O empresário ou frotista paga APENAS MEIA PARCELA (50%) 
+     até a cota ser contemplada. Isso significa que ele preserva o capital de giro da empresa 
+     enquanto concorre por Sorteio, Lance Fixo (25% e 50%) e Lance Embutido de 25%.
+   • Na versão TP, a taxa antecipada de 1,2% pode ser parcelada em 12 vezes!
+
+--------------------------------------------------------------------------------
+5. OS 7 GANCHOS DE CONVERSÃO MATADORES PARA A COPYWRITING DO SITE
+--------------------------------------------------------------------------------
+
+1. "LANCE EMBUTIDO DE ATÉ 30%: ACELERE A CONTEMPLAÇÃO SEM TIRAR DO BOLSO"
+   A maior objeção do cliente é achar que precisa ter 50 ou 100 mil reais guardados 
+   para conseguir contemplar. A copy mostra que a Lifecon estrutura opções com até 30% 
+   de lance embutido (além de 25% na linha geral). O lance sai da própria carta, sem descapitalizar o cliente!
+
+2. "LANCE FIXO: A CONQUISTA NÃO É EXCLUSIVA DE QUEM TEM MAIS DINHEIRO"
+   Em vez de leilões predatórios de quem dá o maior lance livre, o cliente da Lifecon 
+   pode concorrer na modalidade de Lance Fixo (faixas de 25% a 50%), onde todos 
+   os participantes daquela faixa concorrem em igualdade absoluta pela Loteria Federal.
+
+3. "ENTRADA ZERO OU PARCELADA EM 12 VEZES"
+   Bancos exigem 20% a 30% de entrada à vista (R$ 60k a R$ 100k). Na Lifecon, temos 
+   grupos com 0% de taxa antecipada e opções que facilitam o início sem descapitalização.
+
+4. "TAXA ADM PRÉ-FIXADA E SEM JUROS BANCÁRIOS"
+   Contrastar o absurdo de pagar juros compostos que dobram o valor do bem no banco contra 
+   uma taxa administrativa previsível e diluída ao longo de todo o plano.
+
+5. "PLANO 50% PARA PESADOS: PRESERVE O CAIXA DA SUA EMPRESA"
+   Para o frotista e produtor rural, pagar 50% da parcela até contemplar é a solução 
+   definitiva para renovar caminhões e colheitadeiras sem comprometer o fluxo operacional.
+
+6. "PRAZOS SOB MEDIDA: DO CURTO PRAZO AOS 240 MESES (20 ANOS)"
+   Oferecemos grupos com prazos sob medida: horizontes curtos para quem tem pressa e 
+   prazos estendidos de até 240 meses para quem precisa de parcelas menores que o aluguel.
+
+7. "BLINDAGEM DO PODER DE COMPRA (INCC E IPCA)"
+   A carta não perde valor: ela reajusta pelo índice da construção (imóveis) ou inflação (autos), 
+   garantindo que o cliente compre o bem planejado à vista a qualquer tempo.
+================================================================================
