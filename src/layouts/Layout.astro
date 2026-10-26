@@ -11,6 +11,9 @@ const {
   title = "Lifecon · A vida é feita de planos",
   description = "Antes de vender um plano, queremos entender o seu. Assessoria patrimonial e consórcios imobiliários e veiculares com transparência absoluta."
 } = Astro.props;
+
+// Timestamp único de compilação para invalidação instantânea de cache em cada push
+const BUILD_VERSION = Date.now().toString(36);
 ---
 
 <!DOCTYPE html>
@@ -21,14 +24,19 @@ const {
   <title>{title}</title>
   <meta name="description" content={description}>
 
+  <!-- ================= INVALISDADOR DE CACHE EM DISPOSITIVOS MÓVEIS (CACHE-BUSTING) ================= -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="build-version" content={BUILD_VERSION}>
 
   <!-- ================= FAVICON & THEME ================= -->
   <meta name="theme-color" content="#001536">
-  <link rel="icon" type="image/jpeg" href="/assets/logo-lifecon.jpeg">
+  <link rel="icon" type="image/jpeg" href={`/assets/logo-lifecon.jpeg?v=${BUILD_VERSION}`}>
 
   <!-- ================= LCP PRELOAD (PRIMEIRO FRAME DO HERO COM MÁXIMA PRIORIDADE) ================= -->
-  <link rel="preload" as="image" type="image/webp" href="/assets/frames-desktop/frame_0000.webp" media="(min-width: 992px)" fetchpriority="high" />
-  <link rel="preload" as="image" type="image/webp" href="/assets/frames-mobile/frame_0000.webp" media="(max-width: 991px)" fetchpriority="high" />
+  <link rel="preload" as="image" type="image/webp" href={`/assets/frames-desktop/frame_0000.webp?v=${BUILD_VERSION}`} media="(min-width: 992px)" fetchpriority="high" />
+  <link rel="preload" as="image" type="image/webp" href={`/assets/frames-mobile/frame_0000.webp?v=${BUILD_VERSION}`} media="(max-width: 991px)" fetchpriority="high" />
 
   <!-- ================= GOOGLE FONTS (Geist & Instrument Serif) ================= -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

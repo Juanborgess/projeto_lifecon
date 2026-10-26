@@ -291,6 +291,25 @@ import fotoRafael from '../assets/foto-rafael-borges.png';
               Especialista em alavancagem de cartas de crédito e estruturação estratégica para quem deseja construir patrimônio seguro, sem pagar juros bancários.
             </p>
 
+            <!-- Link do Instagram Oficial -->
+            <a 
+              href="https://www.instagram.com/lifeconinvestimentos/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="auth-instagram-link"
+              style="display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--gold); text-decoration: none; margin-bottom: 16px; font-weight: 500; transition: opacity 0.2s ease;"
+              onmouseover="this.style.opacity='0.8'" 
+              onmouseout="this.style.opacity='1'"
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
+              <span>Acompanhe análises e bastidores no @lifeconinvestimentos</span>
+              <span style="font-size: 11px;">↗</span>
+            </a>
+
             <!-- CTA Direto com o Rafael via WhatsApp -->
             <Button
               href="https://wa.me/5521972838954?text=Ol%C3%A1%2C%20Rafael%21%20Conheci%20a%20Lifecon%20pelo%20site%20e%20gostaria%20de%20conversar%20diretamente%20com%20voc%C3%AA%20sobre%20o%20meu%20planejamento."
@@ -649,11 +668,15 @@ import fotoRafael from '../assets/foto-rafael-borges.png';
       var currentFrameIndex = 0;
       var isFirstFrameRendered = false;
 
-      // Formata índice: 0 -> "frame_0000.webp"
+      // Versão de Build (Cache-Busting dinâmico para garantir que cada push carregue arquivos novos)
+      var buildMeta = document.querySelector('meta[name="build-version"]');
+      var buildVersion = buildMeta ? buildMeta.getAttribute('content') : Date.now().toString(36);
+
+      // Formata índice: 0 -> "frame_0000.webp?v=..."
       function getFrameFileName(index) {
         var str = index.toString();
         while (str.length < 4) str = '0' + str;
-        return framesPath + 'frame_' + str + '.webp';
+        return framesPath + 'frame_' + str + '.webp?v=' + buildVersion;
       }
 
       // Redimensionamento Otimizado do Canvas
@@ -914,65 +937,34 @@ import fotoRafael from '../assets/foto-rafael-borges.png';
         }, 0);
       }
 
-      // ================= ANIMAÇÕES BI-DIRECIONAIS DE BLUR IN / BLUR OUT (AURAL + APPLE GRADE) =================
+      // ================= REVELAÇÃO SUAVE AO ROLAR (FADE-UP NATURAL & ESTÁVEL) =================
       function setupBlurScrollAnimations() {
-        var blurElements = document.querySelectorAll('[data-blur-scroll]');
-        if (!blurElements.length) return;
+        var revealElements = document.querySelectorAll('[data-blur-scroll]');
+        if (!revealElements.length) return;
 
-        blurElements.forEach(function (el) {
-          // Estado inicial: desfocado e deslocado suavemente
+        var isMobile = window.matchMedia && window.matchMedia('(max-width: 768px)').matches;
+
+        revealElements.forEach(function (el) {
+          // Estado inicial leve e suave: fade-in e leve deslocamento de 20px (12px no mobile para zero jank)
           gsap.set(el, {
             opacity: 0,
-            filter: 'blur(14px)',
-            y: 35
+            y: isMobile ? 14 : 24,
+            filter: isMobile ? 'none' : 'blur(8px)',
+            willChange: 'opacity, transform'
           });
 
           ScrollTrigger.create({
             trigger: el,
-            start: 'top 88%',
-            end: 'bottom 12%',
+            start: 'top 92%',
+            once: true, // Revela uma única vez perfeitamente sem sumir ou causar pulos na tela
             onEnter: function () {
-              // Entrando por baixo ao rolar para baixo: Blur In suave para nitidez
               gsap.to(el, {
                 opacity: 1,
-                filter: 'blur(0px)',
                 y: 0,
-                duration: 0.85,
-                ease: 'power3.out',
-                overwrite: 'auto'
-              });
-            },
-            onLeave: function () {
-              // Saindo pelo topo ao continuar rolando para baixo: Blur Out suave para cima
-              gsap.to(el, {
-                opacity: 0,
-                filter: 'blur(14px)',
-                y: -35,
-                duration: 0.65,
-                ease: 'power2.in',
-                overwrite: 'auto'
-              });
-            },
-            onEnterBack: function () {
-              // Retornando pelo topo ao rolar para cima: Reaparece com Blur In suave para nitidez
-              gsap.to(el, {
-                opacity: 1,
-                filter: 'blur(0px)',
-                y: 0,
-                duration: 0.85,
-                ease: 'power3.out',
-                overwrite: 'auto'
-              });
-            },
-            onLeaveBack: function () {
-              // Saindo por baixo ao rolar para cima: Blur Out suave para baixo
-              gsap.to(el, {
-                opacity: 0,
-                filter: 'blur(14px)',
-                y: 35,
-                duration: 0.65,
-                ease: 'power2.in',
-                overwrite: 'auto'
+                filter: isMobile ? 'none' : 'blur(0px)',
+                duration: isMobile ? 0.6 : 0.8,
+                ease: 'power2.out',
+                clearProps: 'willChange' // Libera a memória da GPU após animar
               });
             }
           });
